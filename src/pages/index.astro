@@ -1,0 +1,25 @@
+---
+import { getCollection } from 'astro:content';
+import Guide from '../layouts/Guide.astro';
+
+const companies = await getCollection('companies');
+const learn = await getCollection('learn');
+---
+
+<Guide title="Gracia Group" description="Guides for private-market secondary investors.">
+  <h1>Guides</h1>
+
+  <h2>Companies</h2>
+  <ul>
+    {companies.map((entry) => (
+      <li><a href={`/companies/${entry.id}/`}>{entry.data.title}</a></li>
+    ))}
+  </ul>
+
+  <h2>Learn</h2>
+  <ul>
+    {learn.map((entry) => (
+      <li><a href={`/learn/${entry.id}/`}>{entry.data.title}</a></li>
+    ))}
+  </ul>
+</Guide>
