@@ -1,0 +1,50 @@
+---
+import { getCollection } from 'astro:content';
+const notes = (await getCollection('notes')).sort(
+  (a, b) => +new Date(b.data.date) - +new Date(a.data.date),
+);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Private Market Notes | Gracia Group</title>
+    <meta name="description" content="Periodic notes on the late-stage venture names shaping the private markets." />
+    <link rel="canonical" href="https://pre-ipo.graciagroup.com/notes/" />
+    <link rel="stylesheet" href="https://s3.us-east-1.amazonaws.com/main.css/master.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a class="brand" href="/">Gracia Group</a>
+      <nav class="nav">
+        <a class="company-btn" href="/">All companies</a>
+        <a class="btn" href="https://trades.graciagroup.com/?src=notes">Live Trading Book &rarr;</a>
+      </nav>
+    </header>
+    <main class="page">
+      <h1>Private Market Notes</h1>
+      <p class="subtitle">Periodic notes on the late-stage venture names shaping the private markets.</p>
+      <ul class="note-list">
+        {notes.map((entry) => (
+          <li>
+            <a href={`/notes/${entry.id}/`}>{entry.data.title}</a>
+            <span class="date"> — {entry.data.date}</span>
+          </li>
+        ))}
+      </ul>
+    </main>
+  </body>
+</html>
+
+<style>
+  .header { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .brand { font-family: var(--font-display); font-weight: 600; font-size: 1.15rem; color: var(--ink); border-bottom: none; }
+  .nav { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+  .page { padding: 40px; }
+  .note-list { list-style: none; padding: 0; margin: 16px 0 0; }
+  .note-list li { padding: 12px 0; border-bottom: 1px solid var(--border); }
+  .date { color: var(--text-muted); font-size: 14px; }
+  @media (max-width: 640px) { .page { padding: 24px; } }
+</style>

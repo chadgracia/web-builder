@@ -1,6 +1,9 @@
 ---
 import { getCollection } from 'astro:content';
 const companies = await getCollection('companies');
+const notes = (await getCollection('notes')).sort(
+  (a, b) => +new Date(b.data.date) - +new Date(a.data.date),
+);
 ---
 
 <!doctype html>
@@ -16,6 +19,7 @@ const companies = await getCollection('companies');
     <header class="header">
       <a class="brand" href="/">Gracia Group</a>
       <nav class="nav">
+        <a class="company-btn" href="/notes/">Market Notes</a>
         <a class="btn" href="https://trades.graciagroup.com/?src=home">Live Trading Book &rarr;</a>
       </nav>
     </header>
@@ -30,6 +34,20 @@ const companies = await getCollection('companies');
           </li>
         ))}
       </ul>
+
+      {notes.length > 0 && (
+        <section class="notes-section">
+          <h2>Private Market Notes</h2>
+          <ul class="company-list">
+            {notes.map((entry) => (
+              <li>
+                <a href={`/notes/${entry.id}/`}>{entry.data.title}</a>
+                <span class="sec"> — {entry.data.date}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
     </main>
   </body>
 </html>
@@ -42,5 +60,6 @@ const companies = await getCollection('companies');
   .company-list { list-style: none; padding: 0; margin: 16px 0 0; }
   .company-list li { padding: 12px 0; border-bottom: 1px solid var(--border); }
   .sec { color: var(--text-muted); font-size: 14px; }
+  .notes-section { margin-top: 36px; }
   @media (max-width: 640px) { .page { padding: 24px; } }
 </style>
