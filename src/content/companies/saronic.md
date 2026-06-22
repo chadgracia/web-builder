@@ -3,7 +3,7 @@ title: "Saronic Technologies"
 description: "Research notes and live secondary-market indications for Saronic Technologies, a builder of autonomous surface vessels for defense."
 blurb: "Saronic Technologies designs and builds autonomous surface vessels for the U.S. Navy and allied defense customers."
 sector: "Defense / Maritime Autonomy"
-logo: "https://bannerlogos.s3.us-east-1.amazonaws.com/SaronicTechnologies.png"
+logo: "https://bannerlogos.s3.us-east-1.amazonaws.com/Saronic.png"
 ---
 
 ## Saronic: Maritime Autonomy and the Shift to Attritable Mass
