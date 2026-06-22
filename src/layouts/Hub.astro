@@ -33,7 +33,7 @@ const tradesUrl = `https://trades.graciagroup.com/?src=${slug}`;
 
     <main class="page">
       <div class="company-head">
-        {logo && <img src={logo} alt={`${title} logo`} class="company-logo" onerror="this.onerror=null;this.src='https://bannerlogos.s3.us-east-1.amazonaws.com/default.png'" />}
+        {logo && <img src={logo} alt={`${title} logo`} class="company-logo" onerror="this.style.display='none'" />}
         <h1>{title}</h1>
       </div>
       {blurb && <p class="subtitle">{blurb}</p>}
