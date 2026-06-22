@@ -20,3 +20,5 @@ jobs:
           role-to-assume: arn:aws:iam::271378210266:role/github-actions-deploy
           aws-region: us-east-1
       - run: aws s3 sync dist/ s3://secondaries-web/ --delete
+      - name: Invalidate CloudFront
+        run: aws cloudfront create-invalidation --distribution-id E1281EVCWRD53S --paths "/*"

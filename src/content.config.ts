@@ -22,4 +22,13 @@ const learn = defineCollection({
   schema: guideSchema,
 });
 
-export const collections = { companies, learn };
+const notes = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/notes' }),
+  schema: z.object({
+    title: z.string(),
+    date: z.string(),
+    description: z.string(),
+  }),
+});
+
+export const collections = { companies, learn, notes };
