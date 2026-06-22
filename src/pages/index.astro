@@ -4,6 +4,7 @@ const companies = await getCollection('companies');
 const notes = (await getCollection('notes')).sort(
   (a, b) => +new Date(b.data.date) - +new Date(a.data.date),
 );
+const learn = await getCollection('learn');
 ---
 
 <!doctype html>
@@ -48,6 +49,20 @@ const notes = (await getCollection('notes')).sort(
           </ul>
         </section>
       )}
+
+      {learn.length > 0 && (
+        <section class="learn-section">
+          <h2>Ruminations from the Front Lines</h2>
+          <p class="subtitle">Big-picture essays on the private markets, drawn from years of working the secondaries desk.</p>
+          <ul class="company-list">
+            {learn.map((entry) => (
+              <li>
+                <a href={`/learn/${entry.id}/`}>{entry.data.title}</a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
     </main>
   </body>
 </html>
@@ -61,5 +76,6 @@ const notes = (await getCollection('notes')).sort(
   .company-list li { padding: 12px 0; border-bottom: 1px solid var(--border); }
   .sec { color: var(--text-muted); font-size: 14px; }
   .notes-section { margin-top: 36px; }
+  .learn-section { margin-top: 36px; }
   @media (max-width: 640px) { .page { padding: 24px; } }
 </style>
