@@ -13,6 +13,7 @@ const companies = defineCollection({
     description: z.string(),
     blurb: z.string().optional(),
     sector: z.string().optional(),
+    logo: z.string().optional(),
   }),
 });
 

@@ -5,9 +5,10 @@ interface Props {
   blurb?: string;
   sector?: string;
   slug: string;
+  logo?: string;
   canonical?: string;
 }
-const { title, description, blurb, sector, slug, canonical } = Astro.props;
+const { title, description, blurb, sector, slug, logo, canonical } = Astro.props;
 const tradesUrl = `https://trades.graciagroup.com/?src=${slug}`;
 ---
 
@@ -31,10 +32,11 @@ const tradesUrl = `https://trades.graciagroup.com/?src=${slug}`;
     </header>
 
     <main class="page">
+      {logo && <img src={logo} alt={`${title} logo`} class="company-logo" onerror="this.style.display='none'" />}
       <h1>{title}</h1>
       {blurb && <p class="subtitle">{blurb}</p>}
 
-      <p><a class="btn" href={tradesUrl}>See current bids &amp; offers in {title} &rarr; Live Trading Book</a></p>
+      <p class="cta-top"><a class="btn" href={tradesUrl}>See current bids &amp; offers in {title} &rarr; Live Trading Book</a></p>
 
       <article class="report">
         <slot />
@@ -58,6 +60,8 @@ const tradesUrl = `https://trades.graciagroup.com/?src=${slug}`;
   .brand { font-family: var(--font-display); font-weight: 600; font-size: 1.15rem; color: var(--ink); border-bottom: none; }
   .nav { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
   .page { padding: 40px; }
+  .company-logo { height: 52px; width: auto; object-fit: contain; display: block; margin-bottom: 14px; }
+  .cta-top, .cta-bottom { text-align: right; }
   .cta-bottom { margin-top: 32px; }
   .report :global(h2) { margin-top: 8px; }
   .legal { margin-top: 44px; padding-top: 24px; border-top: 1px solid var(--border); font-size: 11px; line-height: 1.6; color: var(--text-muted); }
