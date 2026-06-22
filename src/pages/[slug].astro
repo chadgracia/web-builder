@@ -1,6 +1,6 @@
 ---
 import { getCollection, render } from 'astro:content';
-import Guide from '../../layouts/Guide.astro';
+import Hub from '../layouts/Hub.astro';
 
 export async function getStaticPaths() {
   const entries = await getCollection('companies');
@@ -12,9 +12,16 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content } = await render(entry);
-const canonical = new URL(`/companies/${entry.id}/`, Astro.site ?? Astro.url).href;
+const canonical = new URL(`/${entry.id}/`, Astro.site ?? Astro.url).href;
 ---
 
-<Guide title={entry.data.title} description={entry.data.description} canonical={canonical}>
+<Hub
+  title={entry.data.title}
+  description={entry.data.description}
+  blurb={entry.data.blurb}
+  sector={entry.data.sector}
+  slug={entry.id}
+  canonical={canonical}
+>
   <Content />
-</Guide>
+</Hub>

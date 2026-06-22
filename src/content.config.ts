@@ -8,7 +8,12 @@ const guideSchema = z.object({
 
 const companies = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/companies' }),
-  schema: guideSchema,
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    blurb: z.string().optional(),
+    sector: z.string().optional(),
+  }),
 });
 
 const learn = defineCollection({

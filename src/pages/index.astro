@@ -1,25 +1,46 @@
 ---
 import { getCollection } from 'astro:content';
-import Guide from '../layouts/Guide.astro';
-
 const companies = await getCollection('companies');
-const learn = await getCollection('learn');
 ---
 
-<Guide title="Gracia Group" description="Guides for private-market secondary investors.">
-  <h1>Guides</h1>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pre-IPO Company Research | Gracia Group</title>
+    <meta name="description" content="Background research and live secondary-market indications on leading pre-IPO companies." />
+    <link rel="stylesheet" href="https://s3.us-east-1.amazonaws.com/main.css/master.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a class="brand" href="/">Gracia Group</a>
+      <nav class="nav">
+        <a class="btn" href="https://trades.graciagroup.com/?src=home">Live Trading Book &rarr;</a>
+      </nav>
+    </header>
+    <main class="page">
+      <h1>Pre-IPO Company Research</h1>
+      <p class="subtitle">Background research on leading private companies. For current bids, offers, and round status, visit the live trading book.</p>
+      <ul class="company-list">
+        {companies.map((entry) => (
+          <li>
+            <a href={`/${entry.id}/`}>{entry.data.title}</a>
+            {entry.data.sector && <span class="sec"> — {entry.data.sector}</span>}
+          </li>
+        ))}
+      </ul>
+    </main>
+  </body>
+</html>
 
-  <h2>Companies</h2>
-  <ul>
-    {companies.map((entry) => (
-      <li><a href={`/companies/${entry.id}/`}>{entry.data.title}</a></li>
-    ))}
-  </ul>
-
-  <h2>Learn</h2>
-  <ul>
-    {learn.map((entry) => (
-      <li><a href={`/learn/${entry.id}/`}>{entry.data.title}</a></li>
-    ))}
-  </ul>
-</Guide>
+<style>
+  .header { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .brand { font-family: var(--font-display); font-weight: 600; font-size: 1.15rem; color: var(--ink); border-bottom: none; }
+  .nav { display: flex; gap: 8px; align-items: center; }
+  .page { padding: 40px; }
+  .company-list { list-style: none; padding: 0; margin: 16px 0 0; }
+  .company-list li { padding: 12px 0; border-bottom: 1px solid var(--border); }
+  .sec { color: var(--text-muted); font-size: 14px; }
+  @media (max-width: 640px) { .page { padding: 24px; } }
+</style>
