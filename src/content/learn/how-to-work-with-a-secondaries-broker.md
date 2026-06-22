@@ -1,6 +1,7 @@
 ---
 title: "How to Work with a Secondaries Broker"
 description: "A practical guide to engaging a broker for private-market secondary transactions."
+date: "June 2026"
 ---
 
 Working with a secondaries broker can simplify the process of buying or selling

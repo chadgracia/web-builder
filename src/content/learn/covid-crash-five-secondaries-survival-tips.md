@@ -1,6 +1,7 @@
 ---
 title: "The Covid Crash: Five Secondaries Survival Tips"
 description: "Five principles for managing a pre-IPO secondaries portfolio through a market shock — written during the 2020 crash, with lessons that outlast it."
+date: "March 2020"
 ---
 
 *Written during the March 2020 market crash. The companies named reflect that moment; the principles are evergreen.*

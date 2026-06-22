@@ -1,6 +1,7 @@
 ---
 title: "Anthropic"
 description: "An overview of Anthropic for secondary-market investors."
+sector: "AI / Foundation Models"
 ---
 
 Anthropic is an AI safety and research company. This placeholder page will

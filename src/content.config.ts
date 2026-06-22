@@ -19,7 +19,7 @@ const companies = defineCollection({
 
 const learn = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/learn' }),
-  schema: guideSchema,
+  schema: guideSchema.extend({ date: z.string() }),
 });
 
 const notes = defineCollection({

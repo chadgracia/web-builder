@@ -4,7 +4,9 @@ const companies = await getCollection('companies');
 const notes = (await getCollection('notes')).sort(
   (a, b) => +new Date(b.data.date) - +new Date(a.data.date),
 );
-const learn = await getCollection('learn');
+const learn = (await getCollection('learn')).sort(
+  (a, b) => +new Date(b.data.date) - +new Date(a.data.date),
+);
 ---
 
 <!doctype html>
@@ -58,6 +60,7 @@ const learn = await getCollection('learn');
             {learn.map((entry) => (
               <li>
                 <a href={`/learn/${entry.id}/`}>{entry.data.title}</a>
+                <span class="sec"> — {entry.data.date}</span>
               </li>
             ))}
           </ul>
