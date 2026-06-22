@@ -32,11 +32,16 @@ const tradesUrl = `https://trades.graciagroup.com/?src=${slug}`;
     </header>
 
     <main class="page">
-      {logo && <img src={logo} alt={`${title} logo`} class="company-logo" onerror="this.onerror=null;this.src='https://bannerlogos.s3.us-east-1.amazonaws.com/default.png'" />}
-      <h1>{title}</h1>
+      <div class="company-head">
+        {logo && <img src={logo} alt={`${title} logo`} class="company-logo" onerror="this.onerror=null;this.src='https://bannerlogos.s3.us-east-1.amazonaws.com/default.png'" />}
+        <h1>{title}</h1>
+      </div>
       {blurb && <p class="subtitle">{blurb}</p>}
 
-      <p class="cta-top"><a class="btn" href={tradesUrl}>See current bids &amp; offers in {title} &rarr; Live Trading Book</a></p>
+      <div class="cta-callout">
+        <span class="cta-callout-text">Live bids &amp; offers in {title} are open to registered users.</span>
+        <a class="btn" href={tradesUrl}>View the trading book &rarr;</a>
+      </div>
 
       <article class="report">
         <slot />
@@ -60,8 +65,10 @@ const tradesUrl = `https://trades.graciagroup.com/?src=${slug}`;
   .brand { font-family: var(--font-display); font-weight: 600; font-size: 1.15rem; color: var(--ink); border-bottom: none; }
   .nav { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
   .page { padding: 40px; }
-  .company-logo { height: 52px; width: auto; object-fit: contain; display: block; margin-bottom: 14px; }
-  .cta-top, .cta-bottom { text-align: right; }
+  .company-head { display: flex; align-items: center; gap: 16px; }
+  .company-logo { height: 48px; width: auto; object-fit: contain; }
+  .cta-callout { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; background: #faf8f3; border-left: 4px solid var(--accent); padding: 14px 18px; border-radius: 6px; margin: 22px 0 28px; }
+  .cta-callout-text { font-size: 0.98em; color: var(--ink); }
   .cta-bottom { margin-top: 32px; }
   .report :global(h2) { margin-top: 8px; }
   .legal { margin-top: 44px; padding-top: 24px; border-top: 1px solid var(--border); font-size: 11px; line-height: 1.6; color: var(--text-muted); }
