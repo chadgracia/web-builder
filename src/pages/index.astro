@@ -29,11 +29,14 @@ const learn = (await getCollection('learn')).sort(
     <main class="page">
       <h1>Pre-IPO Research</h1>
       <p class="subtitle">Background research on leading private companies. For current bids, offers, and round status, visit the live trading book.</p>
-      <section class="company-section">
+
+      <input id="search" type="search" placeholder="Search companies, notes, ideas…" class="search-bar" autocomplete="off" />
+
+      <section class="company-section" data-section>
         <h2>Private Company Notes</h2>
         <ul class="company-list">
           {companies.map((entry) => (
-            <li>
+            <li data-search={`${entry.data.title} ${entry.data.sector ?? ''} ${entry.data.blurb ?? ''}`}>
               <a href={`/${entry.id}/`}>{entry.data.title}</a>
               {entry.data.sector && <span class="sec"> — {entry.data.sector}</span>}
             </li>
@@ -42,11 +45,11 @@ const learn = (await getCollection('learn')).sort(
       </section>
 
       {notes.length > 0 && (
-        <section class="notes-section">
+        <section class="notes-section" data-section>
           <h2>Private Market Notes</h2>
           <ul class="company-list">
             {notes.map((entry) => (
-              <li>
+              <li data-search={entry.data.title}>
                 <a href={`/notes/${entry.id}/`}>{entry.data.title}</a>
                 <span class="sec"> — {entry.data.date}</span>
               </li>
@@ -56,12 +59,12 @@ const learn = (await getCollection('learn')).sort(
       )}
 
       {learn.length > 0 && (
-        <section class="learn-section">
+        <section class="learn-section" data-section>
           <h2>Field Notes from the Frontlines</h2>
           <p class="subtitle">Big-picture essays on the private markets, drawn from years of working the secondaries desk.</p>
           <ul class="company-list">
             {learn.map((entry) => (
-              <li>
+              <li data-search={entry.data.title}>
                 <a href={`/learn/${entry.id}/`}>{entry.data.title}</a>
                 <span class="sec"> — {entry.data.date}</span>
               </li>
@@ -81,7 +84,32 @@ const learn = (await getCollection('learn')).sort(
   .company-list { list-style: none; padding: 0; margin: 16px 0 0; }
   .company-list li { padding: 12px 0; border-bottom: 1px solid var(--border); }
   .sec { color: var(--text-muted); font-size: 14px; }
+  .search-bar { display: block; width: 100%; box-sizing: border-box; margin: 20px 0 8px;
+                padding: 10px 14px; font-size: 1rem; border: 1px solid var(--border);
+                border-radius: 6px; background: var(--surface, #fff); color: var(--ink);
+                outline-offset: 2px; }
+  .search-bar:focus { outline: 2px solid var(--accent); border-color: transparent; }
   .notes-section { margin-top: 36px; }
   .learn-section { margin-top: 36px; }
+  [data-section][hidden] { display: none; }
   @media (max-width: 640px) { .page { padding: 24px; } }
 </style>
+
+<script>
+  const input = document.getElementById('search') as HTMLInputElement;
+  const sections = document.querySelectorAll<HTMLElement>('[data-section]');
+
+  input.addEventListener('input', () => {
+    const q = input.value.trim().toLowerCase();
+    sections.forEach((section) => {
+      const items = section.querySelectorAll<HTMLElement>('li[data-search]');
+      let visible = 0;
+      items.forEach((li) => {
+        const match = !q || li.dataset.search!.toLowerCase().includes(q);
+        li.hidden = !match;
+        if (match) visible++;
+      });
+      section.hidden = visible === 0;
+    });
+  });
+</script>
