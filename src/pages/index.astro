@@ -14,7 +14,7 @@ const learn = (await getCollection('learn')).sort(
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Pre-IPO Company Research | Gracia Group</title>
+    <title>Pre-IPO Research | Gracia Group</title>
     <meta name="description" content="Background research and live secondary-market indications on leading pre-IPO companies." />
     <link rel="stylesheet" href="https://s3.us-east-1.amazonaws.com/main.css/master.css" />
   </head>
@@ -22,21 +22,24 @@ const learn = (await getCollection('learn')).sort(
     <header class="header">
       <a class="brand" href="/">Gracia Group</a>
       <nav class="nav">
-        <a class="company-btn" href="/notes/">Market Notes</a>
+        <a class="company-btn" href="/">Research</a>
         <a class="btn" href="https://trades.graciagroup.com/?src=home">Live Trading Book &rarr;</a>
       </nav>
     </header>
     <main class="page">
-      <h1>Pre-IPO Company Research</h1>
+      <h1>Pre-IPO Research</h1>
       <p class="subtitle">Background research on leading private companies. For current bids, offers, and round status, visit the live trading book.</p>
-      <ul class="company-list">
-        {companies.map((entry) => (
-          <li>
-            <a href={`/${entry.id}/`}>{entry.data.title}</a>
-            {entry.data.sector && <span class="sec"> — {entry.data.sector}</span>}
-          </li>
-        ))}
-      </ul>
+      <section class="company-section">
+        <h2>Private Company Notes</h2>
+        <ul class="company-list">
+          {companies.map((entry) => (
+            <li>
+              <a href={`/${entry.id}/`}>{entry.data.title}</a>
+              {entry.data.sector && <span class="sec"> — {entry.data.sector}</span>}
+            </li>
+          ))}
+        </ul>
+      </section>
 
       {notes.length > 0 && (
         <section class="notes-section">
