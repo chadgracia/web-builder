@@ -1,0 +1,17 @@
+---
+interface Props {
+  tradesUrl: string;
+}
+const { tradesUrl } = Astro.props;
+---
+
+<header class="header">
+  <a class="brand" href="/">Gracia Group</a>
+  <nav class="nav">
+    <a class="company-btn" href="/">Home</a>
+    <a class="company-btn" href={tradesUrl}>Invest</a>
+    <a class="company-btn" href="/notes/">Research</a>
+    <a class="company-btn" href="#">My Portfolio</a>
+    <a class="company-btn" href="#">Contact</a>
+  </nav>
+</header>

@@ -1,11 +1,15 @@
 ---
+import Header from '../components/Header.astro';
+
 interface Props {
   title: string;
   description?: string;
+  slug: string;
   canonical?: string;
 }
 
-const { title, description, canonical } = Astro.props;
+const { title, description, slug, canonical } = Astro.props;
+const tradesUrl = `https://trades.graciagroup.com/?src=${slug}`;
 ---
 
 <!doctype html>
@@ -16,14 +20,13 @@ const { title, description, canonical } = Astro.props;
     <title>{title}</title>
     {description && <meta name="description" content={description} />}
     {canonical && <link rel="canonical" href={canonical} />}
+    <link rel="stylesheet" href="https://s3.us-east-1.amazonaws.com/main.css/master.css" />
   </head>
   <body>
-    <header class="site-header">
-      <a href="/" class="brand">Gracia Group</a>
-    </header>
+    <Header tradesUrl={tradesUrl} />
 
     <main class="guide">
-      <article class="guide-body">
+      <article class="report">
         <slot />
       </article>
       <aside class="deal-panel" aria-hidden="true">
@@ -32,31 +35,12 @@ const { title, description, canonical } = Astro.props;
     </main>
 
     <footer class="site-footer">
-      <a class="cta" href="/?src=guide">Work with Gracia Group</a>
+      <a class="btn" href={tradesUrl}>Work with Gracia Group</a>
     </footer>
   </body>
 </html>
 
 <style>
-  :global(body) {
-    margin: 0;
-    font-family: system-ui, -apple-system, sans-serif;
-    color: #1a1a1a;
-    line-height: 1.6;
-  }
-
-  .site-header {
-    padding: 1rem 2rem;
-    border-bottom: 1px solid #e5e5e5;
-  }
-
-  .brand {
-    font-weight: 700;
-    font-size: 1.25rem;
-    color: inherit;
-    text-decoration: none;
-  }
-
   .guide {
     display: grid;
     grid-template-columns: minmax(0, 1fr) 280px;
@@ -67,7 +51,7 @@ const { title, description, canonical } = Astro.props;
   }
 
   .deal-panel {
-    border: 1px dashed #c4c4c4;
+    border: 1px dashed var(--border, #c4c4c4);
     border-radius: 8px;
     background: #fafafa;
     min-height: 200px;
@@ -75,18 +59,8 @@ const { title, description, canonical } = Astro.props;
 
   .site-footer {
     padding: 2rem;
-    border-top: 1px solid #e5e5e5;
+    border-top: 1px solid var(--border, #e5e5e5);
     text-align: center;
-  }
-
-  .cta {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    border-radius: 6px;
-    background: #1a1a1a;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
   }
 
   @media (max-width: 720px) {
