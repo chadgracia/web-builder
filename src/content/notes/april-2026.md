@@ -1,5 +1,5 @@
 ---
-title: "Private Market Notes — April 2026"
+title: "Scrutiny, Sovereign Capital, and the Defense AI Surge"
 date: "April 2026"
 description: "Five updates on the late-stage venture names shaping the private markets — OpenAI, Anthropic, Project Prometheus, Anduril, and Tenstorrent."
 ---
