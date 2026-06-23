@@ -4,11 +4,12 @@ import Header from '../components/Header.astro';
 interface Props {
   title: string;
   description?: string;
+  date?: string;
   slug: string;
   canonical?: string;
 }
 
-const { title, description, slug, canonical } = Astro.props;
+const { title, description, date, slug, canonical } = Astro.props;
 const tradesUrl = `https://trades.graciagroup.com/?src=${slug}`;
 ---
 
@@ -27,6 +28,10 @@ const tradesUrl = `https://trades.graciagroup.com/?src=${slug}`;
 
     <main class="guide">
       <article class="report">
+        <div class="article-head">
+          <h1>{title}</h1>
+          {date && <p class="article-date">{date}</p>}
+        </div>
         <slot />
       </article>
       <aside class="deal-panel" aria-hidden="true">
@@ -41,6 +46,9 @@ const tradesUrl = `https://trades.graciagroup.com/?src=${slug}`;
 </html>
 
 <style>
+  .article-head h1 { margin-bottom: 4px; }
+  .article-date { color: var(--text-muted, #6b7280); font-size: 14px; margin: 0 0 1.5rem; }
+
   .guide {
     display: grid;
     grid-template-columns: minmax(0, 1fr) 280px;

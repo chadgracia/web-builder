@@ -15,6 +15,6 @@ const { Content } = await render(entry);
 const canonical = new URL(`/learn/${entry.id}/`, Astro.site ?? Astro.url).href;
 ---
 
-<Guide title={entry.data.title} description={entry.data.description} slug={entry.id} canonical={canonical}>
+<Guide title={entry.data.title} description={entry.data.description} date={entry.data.date} slug={entry.id} canonical={canonical}>
   <Content />
 </Guide>
