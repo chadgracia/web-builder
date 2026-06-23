@@ -1,5 +1,5 @@
 ---
-title: "How to Work with a Secondaries Broker"
+title: "Ten Tips for Working with a Secondaries Broker"
 description: "A practical guide to engaging a broker for private-market secondary transactions."
 date: "June 2026"
 ---
