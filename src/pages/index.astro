@@ -5,7 +5,7 @@ const notes = (await getCollection('notes')).sort(
   (a, b) => +new Date(b.data.date) - +new Date(a.data.date),
 );
 const learn = (await getCollection('learn')).sort(
-  (a, b) => +new Date(b.data.date) - +new Date(a.data.date),
+  (a, b) => +new Date(a.data.date) - +new Date(b.data.date),
 );
 
 // Build a search index string from a few fields plus the full article body,
