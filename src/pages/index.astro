@@ -7,6 +7,10 @@ const notes = (await getCollection('notes')).sort(
 const learn = (await getCollection('learn')).sort(
   (a, b) => +new Date(b.data.date) - +new Date(a.data.date),
 );
+
+// Build a search index string from a few fields plus the full article body,
+// so the homepage search matches on content (e.g. "prometheus"), not just titles.
+const searchIndex = (...parts) => parts.filter(Boolean).join(' ').replace(/\s+/g, ' ').trim();
 ---
 
 <!doctype html>
@@ -22,7 +26,6 @@ const learn = (await getCollection('learn')).sort(
     <header class="header">
       <a class="brand" href="/">Gracia Group</a>
       <nav class="nav">
-        <a class="company-btn" href="/">Research</a>
         <a class="btn" href="https://trades.graciagroup.com/?src=home">Live Trading Book &rarr;</a>
       </nav>
     </header>
@@ -36,7 +39,7 @@ const learn = (await getCollection('learn')).sort(
         <h2>Private Company Notes</h2>
         <ul class="company-list">
           {companies.map((entry) => (
-            <li data-search={`${entry.data.title} ${entry.data.sector ?? ''} ${entry.data.blurb ?? ''}`}>
+            <li data-search={searchIndex(entry.data.title, entry.data.sector, entry.data.blurb, entry.body)}>
               <a href={`/${entry.id}/`}>{entry.data.title}</a>
               {entry.data.sector && <span class="sec"> — {entry.data.sector}</span>}
             </li>
@@ -49,7 +52,7 @@ const learn = (await getCollection('learn')).sort(
           <h2>Private Market Notes</h2>
           <ul class="company-list">
             {notes.map((entry) => (
-              <li data-search={entry.data.title}>
+              <li data-search={searchIndex(entry.data.title, entry.body)}>
                 <a href={`/notes/${entry.id}/`}>{entry.data.title}</a>
                 <span class="sec"> — {entry.data.date}</span>
               </li>
@@ -64,7 +67,7 @@ const learn = (await getCollection('learn')).sort(
           <p class="subtitle">Big-picture essays on the private markets, drawn from years of working the secondaries desk.</p>
           <ul class="company-list">
             {learn.map((entry) => (
-              <li data-search={entry.data.title}>
+              <li data-search={searchIndex(entry.data.title, entry.body)}>
                 <a href={`/learn/${entry.id}/`}>{entry.data.title}</a>
                 <span class="sec"> — {entry.data.date}</span>
               </li>

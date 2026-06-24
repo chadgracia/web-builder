@@ -1,5 +1,5 @@
 ---
-title: "Ten Pre-IPO Trades I'm Working On"
+title: "Ten Active Pre-IPO Trades Across AI, Defense & Frontier Tech"
 date: "March 2026"
 description: "A snapshot of ten names actively trading in the pre-IPO secondary market, with the latest catalyst on each — from Anthropic and Shield AI to Gecko Robotics, Kalshi, and Kraken."
 ---
