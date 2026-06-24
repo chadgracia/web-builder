@@ -35,12 +35,3 @@ Despite the heightened investor interest surrounding the scanner's launch, Midjo
 - **Restrictive Corporate Governance:** The company's cap table is tightly controlled and entirely private. Shares are subject to ironclad transfer restrictions and strict Corporate Rights of First Refusal (ROFR). Midjourney has no debt pressures and no stated intention to pursue an Initial Public Offering (IPO).
 
 There is currently no viable, direct legal path to acquire or trade equity in Midjourney, Inc. Any secondary indications of interest or synthetic structures offered on private desks are structurally unfillable.
-
-## Private Market Alternatives
-
-For allocation mandates seeking exposure to advanced multi-modal AI or high-growth medical imaging and multiomics, several active venture-backed alternatives maintain liquid share profiles on secondary marketplaces (such as Hiive, Forge Global, and Nasdaq Private Market):
-
-- **OpenAI:** The market leader in multi-modal LLMs and enterprise AI deployment. OpenAI boasts a highly active, liquid secondary market presence driven by regular institutional tender offers.
-- **Anthropic:** Primary developer of the Claude foundation models. Anthropic represents a pure-play alternative in safety-focused, enterprise-grade generative intelligence with strong institutional secondary availability.
-- **Prenuvo / Ezra:** For investors specifically targeting the preventative, whole-body imaging thesis highlighted by the Midjourney Scanner, these venture-backed magnetic resonance imaging (MRI) clinics represent the primary operational alternatives scaling across the consumer healthcare layer.
-- **Canva:** While not a medical hardware play, Canva has successfully integrated advanced visual generative AI suites across its enterprise design network and offers mature, dependable liquidity on major private secondary desks.
