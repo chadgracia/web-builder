@@ -1,0 +1,17 @@
+---
+title: "Prometheus — Jeff Bezos's Industrial AI Startup"
+description: "A research note on Prometheus, the physical-AI company founded by Jeff Bezos, following its $12 billion round — with access to the round."
+sector: "AI / Physical AI"
+---
+
+Prometheus is Jeff Bezos's new company, and his first operating role since he stepped down as Amazon's CEO in 2021. It is trying to build what Bezos calls an ["artificial general engineer"](https://www.geekwire.com/2026/jeff-bezos-describes-his-38b-startup-prometheus-for-the-first-time-nothing-to-do-with-robotics/) — AI that can design and help manufacture physical things, from chips to aircraft to drugs. It was founded in November 2025 as Project Prometheus and is run by Bezos and Vik Bajaj, a scientist who previously worked at Google's research lab and co-founded its life-sciences business. It is based in San Francisco, with offices in London and Zurich.
+
+**What it does.** Most AI so far has worked with words and images. Prometheus is going after the physical world: software that understands how real objects and materials behave, so it can help engineers design and build them faster. Bezos has described it as a very modern version of the design software engineers already use. The near-term targets are heavy engineering and manufacturing — areas like aerospace, automobiles, computing hardware, and drug design. The company has said little about what it has actually built; it is still mostly in stealth.
+
+**Where it stands.** Prometheus is early and deliberately quiet. It has around 150 people across its three offices, hired from the major AI labs, and at launch it acquired a small AI company working on systems that turn what they see into actions. There is no product in the market yet and no announced timeline, and the founders have said it is too early to talk about an IPO. By its own account the work is very compute-heavy, which is much of why it has raised so much.
+
+**Funding.** Prometheus launched in November 2025 with [$6.2 billion in initial funding](https://www.datacenterdynamics.com/en/news/jeff-bezos-to-be-co-ceo-of-project-prometheus-an-ai-startup-with-62bn-in-funding/), much of it from Bezos himself. In June 2026 it announced a [$12 billion round at about a $41 billion valuation](https://techcrunch.com/2026/06/11/jeff-bezoss-prometheus-raises-12b-to-build-an-artificial-general-engineer-for-the-physical-world/), bringing total funding to roughly $18 billion — one of the largest sums ever raised by a company this young. Alongside Bezos, the round included JPMorgan, BlackRock, Goldman Sachs, DST Global, and Arch Venture Partners.
+
+**The current opportunity.** This is one of the most closely watched private companies in the world right now, and access to it is hard to come by. We have access to this round. If you would like to look at it, we can share what we have and arrange a conversation.
+
+**Worth keeping in mind.** The valuation is very high for a company that is barely a year old, has no product in the market, and has said almost nothing about its results. The bet rests heavily on Bezos, his team, and the idea that AI for the physical world will prove as valuable as AI for text. The cost of competing here is large, and the timeline is unknown. This is a high-price position on a name with a well-known founder and very little to evaluate yet — closer to backing a thesis and a team than a business with results.
