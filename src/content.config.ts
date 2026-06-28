@@ -14,6 +14,7 @@ const companies = defineCollection({
     blurb: z.string().optional(),
     sector: z.string().optional(),
     logo: z.string().optional(),
+    noShares: z.boolean().optional(),
   }),
 });
 

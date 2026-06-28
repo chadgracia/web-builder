@@ -6,9 +6,10 @@ interface Props {
   sector?: string;
   slug: string;
   logo?: string;
+  noShares?: boolean;
   canonical?: string;
 }
-const { title, description, blurb, sector, slug, logo, canonical } = Astro.props;
+const { title, description, blurb, sector, slug, logo, noShares, canonical } = Astro.props;
 const tradesUrl = `https://trades.graciagroup.com/?src=${slug}`;
 ---
 
@@ -38,16 +39,21 @@ const tradesUrl = `https://trades.graciagroup.com/?src=${slug}`;
       </div>
       {blurb && <p class="subtitle">{blurb}</p>}
 
-      <div class="cta-callout">
-        <span class="cta-callout-text">Live bids &amp; offers in {title} are open to registered users.</span>
-        <a class="btn" href={tradesUrl}>View the trading book &rarr;</a>
-      </div>
+      {!noShares && (
+        <div class="cta-callout">
+          <span class="cta-callout-text">Live bids &amp; offers in {title} are open to registered users.</span>
+          <a class="btn" href={tradesUrl}>View the trading book &rarr;</a>
+        </div>
+      )}
 
       <article class="report">
         <slot />
       </article>
 
-      <p class="cta-bottom"><a class="btn" href={tradesUrl}>To see what&rsquo;s live in {title} today, visit the full trading book &rarr;</a></p>
+      {noShares
+        ? <p class="cta-bottom no-shares"><em>No shares currently available, for information purposes only.</em></p>
+        : <p class="cta-bottom"><a class="btn" href={tradesUrl}>To see what&rsquo;s live in {title} today, visit the full trading book &rarr;</a></p>
+      }
 
       <footer class="legal">
         <p class="lead">DISCLOSURE: Rainmaker Securities, LLC (“RMS”) is a FINRA registered broker-dealer and SIPC member. Find this broker-dealer and its agents on BrokerCheck. Our relationship summary can be found on the RMS website.</p>
@@ -70,6 +76,7 @@ const tradesUrl = `https://trades.graciagroup.com/?src=${slug}`;
   .cta-callout { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; background: #faf8f3; border-left: 4px solid var(--accent); padding: 14px 18px; border-radius: 6px; margin: 22px 0 28px; }
   .cta-callout-text { font-size: 0.98em; color: var(--ink); }
   .cta-bottom { margin-top: 32px; }
+  .cta-bottom.no-shares { color: var(--text-muted); font-size: 0.95em; }
   .report :global(h2) { margin-top: 8px; }
   .legal { margin-top: 44px; padding-top: 24px; border-top: 1px solid var(--border); font-size: 11px; line-height: 1.6; color: var(--text-muted); }
   .legal .lead { font-weight: 600; color: var(--text-secondary); }

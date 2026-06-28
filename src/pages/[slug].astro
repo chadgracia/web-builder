@@ -22,6 +22,7 @@ const canonical = new URL(`/${entry.id}/`, Astro.site ?? Astro.url).href;
   sector={entry.data.sector}
   slug={entry.id}
   logo={entry.data.logo}
+  noShares={entry.data.noShares}
   canonical={canonical}
 >
   <Content />

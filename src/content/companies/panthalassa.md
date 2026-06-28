@@ -2,6 +2,7 @@
 title: "Panthalassa — Computing Powered by the Ocean"
 description: "A research note on Panthalassa, an Oregon company building wave-powered systems that generate clean energy and run AI computing at sea."
 sector: "Energy / AI Infrastructure"
+noShares: true
 ---
 
 Panthalassa is going after the constraint that increasingly limits AI: not chips, but power and somewhere to put them. It was founded in 2016 by Garth Sheldon-Coulson, a former AI and energy researcher at [the hedge fund Bridgewater](https://energydigital.com/news/panthalassa-the-floating-wave-powered-data-centre-unicorn), and it has spent close to a decade building floating steel structures that turn ocean waves into electricity. Those same structures now run AI computing at sea.
