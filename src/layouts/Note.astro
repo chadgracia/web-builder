@@ -68,8 +68,12 @@ const tradesUrl = `https://trades.graciagroup.com/?src=${slug}`;
   .cta-callout-text { font-size: 0.98em; color: var(--ink); }
   .cta-bottom { margin-top: 32px; }
   .report :global(h2), .report :global(h3) { margin-top: 8px; }
-  .report :global(h2) { font-size: 1.5rem; margin-top: 36px; }
-  .report :global(h3) { font-size: 1.3rem; margin-top: 36px; margin-bottom: 10px; }
+  .report :global(h3) { font-size: 1.3rem; margin-top: 40px; margin-bottom: 12px; }
+  .report :global(ul) { padding-left: 1.1rem; margin: 0 0 14px; list-style: none; }
+  .report :global(ul li) { margin-bottom: 10px; line-height: 1.6; padding-left: 14px; position: relative; }
+  .report :global(ul li::before) { content: ""; position: absolute; left: 0; top: 0.62em; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); }
+  .report :global(.deal-link) { margin: 4px 0 8px; }
+  .report :global(.deal-link a) { font-weight: 600; }
   .legal { margin-top: 44px; padding-top: 24px; border-top: 1px solid var(--border); font-size: 11px; line-height: 1.6; color: var(--text-muted); }
   .legal .lead { font-weight: 600; color: var(--text-secondary); }
   .legal p { margin: 0 0 10px; }
