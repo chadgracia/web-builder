@@ -6,13 +6,13 @@ description: "Five companies we cover that are tackling the physical limits of t
 
 *Private company notes · August 2026*
 
-![Illustrated map of five AI infrastructure bottlenecks: Panthalassa ocean-based wave power and cooling, Lightmatter optical chip interconnects, Positron AI transformer inference hardware, Mercor expert training-data pipeline, and 1X Technologies warehouse robots](https://s3.us-east-1.amazonaws.com/main.css/ai-bottlenecks.jpg)
-
 While AI continues to advance at a rapid pace, the real-world infrastructure supporting it is hitting practical limits.
 
 Building and running advanced AI now faces major real-world hurdles: local power grids cannot supply enough electricity, microchips are generating too much heat, general-purpose chips are becoming too expensive for routine tasks, training systems are running out of high-quality human data, and software still lacks physical hands to do manual work.
 
 Here are five companies we cover that are developing solutions to these operational bottlenecks.
+
+<img src="https://s3.us-east-1.amazonaws.com/main.css/ai-bottlenecks.jpg" alt="Illustrated map of five AI infrastructure bottlenecks: Panthalassa ocean-based wave power and cooling, Lightmatter optical chip interconnects, Positron AI transformer inference hardware, Mercor expert training-data pipeline, and 1X Technologies warehouse robots" style="max-width:100%;height:auto;display:block;margin:1.5rem 0;" />
 
 ### 1. Panthalassa
 
