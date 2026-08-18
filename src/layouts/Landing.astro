@@ -1,0 +1,45 @@
+---
+import Analytics from '../components/Analytics.astro';
+import Header from '../components/Header.astro';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description } = Astro.props;
+const tradesUrl = 'https://trades.graciagroup.com/?src=guide';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>{title}</title>
+    {description && <meta name="description" content={description} />}
+    <link rel="stylesheet" href="https://s3.us-east-1.amazonaws.com/main.css/master.css" />
+    <Analytics />
+    <slot name="head" />
+  </head>
+  <body>
+    <Header tradesUrl={tradesUrl} />
+
+    <main class="landing">
+      <slot />
+    </main>
+  </body>
+</html>
+
+<style>
+  .landing {
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 40px 0 64px;
+  }
+
+  @media (max-width: 640px) {
+    .landing { padding: 24px 0 48px; }
+  }
+</style>

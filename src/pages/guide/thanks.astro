@@ -1,0 +1,17 @@
+---
+import Landing from '../../layouts/Landing.astro';
+---
+
+<Landing
+  title="Check your email — Gracia Group"
+  description="Your copy of the pre-IPO guide is on the way."
+>
+  <script is:inline slot="head">
+    gtag('event', 'generate_lead');
+  </script>
+
+  <article class="report">
+    <h1 class="page-title">Check your email</h1>
+    <p>Your copy of the guide is on the way. If it hasn&rsquo;t arrived in a few minutes, check your spam folder &mdash; and add us to your contacts so the weekly briefing reaches you too.</p>
+  </article>
+</Landing>
