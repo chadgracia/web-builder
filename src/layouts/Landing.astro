@@ -5,10 +5,11 @@ import Header from '../components/Header.astro';
 interface Props {
   title: string;
   description?: string;
+  tradesSrc?: string;
 }
 
-const { title, description } = Astro.props;
-const tradesUrl = 'https://trades.graciagroup.com/?src=guide';
+const { title, description, tradesSrc = 'guide' } = Astro.props;
+const tradesUrl = `https://trades.graciagroup.com/?src=${tradesSrc}`;
 ---
 
 <!doctype html>
