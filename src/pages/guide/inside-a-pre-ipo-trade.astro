@@ -1,0 +1,69 @@
+---
+import Landing from '../../layouts/Landing.astro';
+import { Content } from '../../guides/inside-a-pre-ipo-trade.md';
+---
+
+<Landing
+  title="Inside a Pre-IPO Trade | Gracia Group"
+  description="How private secondaries actually work — and where investors get burned. A working broker's guide by Chad Gracia, Gracia Group."
+  tradesSrc="guide-article"
+>
+  <article class="report guide-article">
+    <Content />
+  </article>
+</Landing>
+
+<style>
+  /* Article typography, matching the note and guide pages. */
+  .guide-article :global(h1) {
+    font-size: 34px;
+    line-height: 1.15;
+    margin: 0 0 6px;
+  }
+
+  /* The deck line directly under the title. */
+  .guide-article :global(h1 + h2) {
+    font-size: 19px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    margin: 0 0 18px;
+  }
+
+  .guide-article :global(h2) {
+    font-size: 22px;
+    margin-top: 40px;
+    margin-bottom: 14px;
+  }
+
+  .guide-article :global(h3) {
+    font-size: 1.3rem;
+    margin-top: 32px;
+    margin-bottom: 12px;
+  }
+
+  .guide-article :global(p) { line-height: 1.7; }
+
+  .guide-article :global(hr) { margin: 36px 0; }
+
+  .guide-article :global(ul) { padding-left: 1.1rem; margin: 0 0 14px; list-style: none; }
+  .guide-article :global(ul li) { margin-bottom: 10px; line-height: 1.6; padding-left: 14px; position: relative; }
+  .guide-article :global(ul li::before) {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.62em;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+
+  /* Long email and domain links must not force a horizontal scroll on phones. */
+  .guide-article :global(a) { overflow-wrap: anywhere; }
+
+  @media (max-width: 640px) {
+    .guide-article :global(h1) { font-size: 28px; }
+    .guide-article :global(h1 + h2) { font-size: 17px; }
+    .guide-article :global(h2) { font-size: 20px; margin-top: 32px; }
+  }
+</style>
