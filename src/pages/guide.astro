@@ -1,0 +1,112 @@
+---
+import Landing from '../layouts/Landing.astro';
+---
+
+<Landing
+  title="Inside a Pre-IPO Trade: A Guide for Accredited Investors"
+  description="A working broker's guide to how private secondary transactions actually happen — the mechanics, the structures, and the traps. By Chad Gracia, Gracia Group."
+>
+  <article class="report">
+    <h1 class="page-title">How Pre-IPO Trades Actually Work &mdash; and Where Buyers Get Burned</h1>
+
+    <p class="lede">Most of what&rsquo;s written about pre-IPO investing is written by people who have never closed a trade.</p>
+
+    <p>This guide is different. It&rsquo;s a working broker&rsquo;s account of how private secondary transactions actually happen &mdash; the mechanics, the structures, the traps &mdash; drawn from ten years on the front lines of this market and nearly $200M in closed transactions, including SpaceX and Anthropic, two of the hardest names to actually deliver.</p>
+
+    <h2>What&rsquo;s inside:</h2>
+
+    <p><strong>The anatomy of a real trade.</strong> A closed transaction, walked through start to settlement: the indication, the pricing negotiation, the right-of-first-refusal clock, the documents, and how long each step really takes.</p>
+
+    <p><strong>The many flavors of SPVs &mdash; and which to avoid.</strong> Not all vehicles are built alike. How to read a structure before you wire, and the ones that quietly eat your return.</p>
+
+    <p><strong>Direct shares vs. SPVs.</strong> The real differences in what you own, and how experienced buyers position themselves to get directs.</p>
+
+    <p><strong>What to know before trading through a platform.</strong> The economics behind &ldquo;free&rdquo; access, before you commit.</p>
+
+    <p><strong>Red flags &mdash; and the questions that expose them.</strong> What phantom inventory looks like, what &ldquo;allocation&rdquo; claims actually mean, and the specific questions to put to any broker or seller before money moves.</p>
+
+    <section class="signup">
+      <h2>Get the guide</h2>
+
+      <form method="POST" action="https://trades.graciagroup.com/guide-signup">
+        <div class="field">
+          <label for="first_name">First name</label>
+          <input type="text" id="first_name" name="first_name" autocomplete="given-name" required />
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" autocomplete="email" required />
+        </div>
+
+        <input type="hidden" id="src" name="src" value="" />
+
+        <button class="btn submit" type="submit">Send me the guide</button>
+      </form>
+
+      <p class="fine-print">You&rsquo;ll receive the guide by email, along with our weekly pre-IPO briefing &mdash; real opportunities, real risk disclosure, no hype. Unsubscribe anytime.</p>
+    </section>
+
+    <p class="friction">No registration. No accreditation forms. No sales calls. Just the guide.</p>
+
+    <h2>About the author</h2>
+
+    <p>Chad Gracia has spent 25 years advising venture funds and high-net-worth investors on private markets &mdash; the last ten focused exclusively on pre-IPO secondaries. For six years he directed the U.S. Commerce Department&rsquo;s private equity and venture capital trade missions to the Middle East. He is a registered representative of Rainmaker Securities, LLC, member FINRA/SIPC.</p>
+
+    <p class="disclaimer"><em>Private securities are speculative, illiquid, and involve a high degree of risk, including possible loss of the entire investment. They are suitable only for accredited investors. This page is for informational purposes and is not an offer to sell or a solicitation of an offer to buy any security.</em></p>
+  </article>
+</Landing>
+
+<script is:inline>
+  (function () {
+    var field = document.getElementById('src');
+    if (!field) return;
+    var params = new URLSearchParams(window.location.search);
+    field.value = params.get('src') || '';
+  })();
+</script>
+
+<style>
+  .lede { font-size: 1.15rem; color: var(--ink); }
+
+  .signup {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    margin: 32px 0;
+  }
+  .signup h2 { margin-top: 0; }
+
+  .field { margin-bottom: 16px; }
+
+  .submit {
+    width: 100%;
+    display: block;
+    padding: 13px 18px;
+    font-size: 16px;
+    margin-top: 4px;
+  }
+
+  .fine-print {
+    font-size: 13px;
+    line-height: 1.55;
+    color: var(--text-muted);
+    margin: 14px 0 0;
+  }
+
+  .friction { font-weight: 600; color: var(--ink); }
+
+  .disclaimer {
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--text-muted);
+    margin-top: 28px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+  }
+
+  @media (max-width: 640px) {
+    .signup { padding: 18px; }
+  }
+</style>
