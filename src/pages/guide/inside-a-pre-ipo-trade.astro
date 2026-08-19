@@ -11,7 +11,24 @@ import { Content } from '../../guides/inside-a-pre-ipo-trade.md';
   <article class="report guide-article">
     <Content />
   </article>
+  <div class="watchlist-block">
+    <h2>Want to see trades in specific companies?</h2>
+    <p>Tell me which names you&rsquo;re watching, and when a seller appears in one of them you&rsquo;ll hear about it.</p>
+    <a id="watchlist-cta" class="watchlist-btn" href="https://pre-ipo.graciagroup.com/guide">Build your Pre-IPO Watchlist &rarr;</a>
+  </div>
 </Landing>
+
+<script is:inline>
+  (function () {
+    var m = location.hash.match(/p=(\d+)&t=([A-Za-z0-9_-]+)/);
+    if (!m) return;
+    var a = document.getElementById('watchlist-cta');
+    if (a) {
+      a.href = 'https://mrp5bv4iia7jxjfrvn67tpycsu0jqvny.lambda-url.us-east-1.on.aws/?person_id=' + m[1] + '&token=' + m[2];
+    }
+    history.replaceState(null, '', location.pathname + location.search);
+  })();
+</script>
 
 <style>
   /* Article typography, matching the note and guide pages. */
@@ -65,5 +82,28 @@ import { Content } from '../../guides/inside-a-pre-ipo-trade.md';
     .guide-article :global(h1) { font-size: 28px; }
     .guide-article :global(h1 + h2) { font-size: 17px; }
     .guide-article :global(h2) { font-size: 20px; margin-top: 32px; }
+  }
+
+  .watchlist-block {
+    margin: 44px 0 8px;
+    padding: 26px 22px;
+    border: 1px solid var(--border, #cdc9c0);
+    border-radius: 10px;
+    text-align: center;
+  }
+  .watchlist-block h2 { margin: 0 0 8px; font-size: 22px; }
+  .watchlist-block p {
+    margin: 0 0 18px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+  }
+  .watchlist-btn {
+    display: inline-block;
+    background: var(--accent);
+    color: #ffffff;
+    font-weight: 600;
+    padding: 12px 22px;
+    border-radius: 6px;
+    text-decoration: none;
   }
 </style>
