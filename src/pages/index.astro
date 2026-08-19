@@ -1,5 +1,6 @@
 ---
 import Analytics from '../components/Analytics.astro';
+import Disclosure from '../components/Disclosure.astro';
 import { getCollection } from 'astro:content';
 const companies = await getCollection('companies');
 const notes = (await getCollection('notes')).sort(
@@ -77,6 +78,7 @@ const searchIndex = (...parts) => parts.filter(Boolean).join(' ').replace(/\s+/g
           </ul>
         </section>
       )}
+      <Disclosure />
     </main>
   </body>
 </html>

@@ -1,6 +1,7 @@
 ---
 import Analytics from '../components/Analytics.astro';
 import Header from '../components/Header.astro';
+import Disclosure from '../components/Disclosure.astro';
 
 interface Props {
   title: string;
@@ -44,6 +45,10 @@ const tradesUrl = `https://trades.graciagroup.com/?src=${slug}`;
     <footer class="site-footer">
       <a class="btn" href={tradesUrl}>Work with Gracia Group</a>
     </footer>
+
+    <div class="page-disclosure">
+      <Disclosure />
+    </div>
   </body>
 </html>
 
@@ -65,6 +70,12 @@ const tradesUrl = `https://trades.graciagroup.com/?src=${slug}`;
     border-radius: 8px;
     background: #fafafa;
     min-height: 200px;
+  }
+
+  .page-disclosure {
+    max-width: 64rem;
+    margin: 0 auto;
+    padding: 0 2rem 2rem;
   }
 
   .site-footer {

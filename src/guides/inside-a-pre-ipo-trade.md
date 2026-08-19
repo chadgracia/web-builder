@@ -120,7 +120,3 @@ If you've read this far, you know more about how this market actually works than
 
 Chad Gracia   
 Registered Representative, Rainmaker Securities, LLC
-
----
-
-*DISCLOSURE: Chad Gracia ("Gracia") is a principal of The Gracia Group, LLC ("Gracia Group") and a registered agent of Rainmaker Securities, LLC ("RMS"). Gracia Group is a consulting firm and outside business activity of Gracia and is not affiliated with RMS. RMS is a FINRA-registered broker-dealer and SIPC member; find RMS and its agents on BrokerCheck. RMS is engaged by its clients to make referrals to buyers or sellers of private securities and is entitled to a success fee if a referred transaction closes. This guide is educational material reflecting the author's personal experience and opinions. It does not represent an offer or solicitation to buy or sell securities; any such offer must be made via definitive legal documentation. Investments in private securities are speculative and involve a high degree of risk, including illiquidity and the possible loss of the entire investment. RMS does not recommend the purchase or sale of any security. Consult your own professional advisors before entering into any transaction.*  
