@@ -36,6 +36,12 @@ Let me walk you through an actual transaction — a direct share transfer in a p
 
 One more cost note while we're being concrete: some companies charge a transfer fee, typically $5,000–$7,000. Be aware and discuss in advance who will pay. This is one reason minimum ticket sizes in directs are real — the fixed costs make small transactions impractical.
 
+<div class="watchlist-block">
+  <h2>Want to see trades in specific companies?</h2>
+  <p>Tell me which names you&rsquo;re watching, and when a seller appears in one of them you&rsquo;ll hear about it.</p>
+  <a class="watchlist-btn" href="https://pre-ipo.graciagroup.com/guide">Build your Pre-IPO Watchlist &rarr;</a>
+</div>
+
 ---
 
 ## Part 2: The Many Flavors of SPVs — and Which to Avoid
@@ -51,6 +57,12 @@ When a company blocks direct transfers — and more of the most sought-after nam
 **The syndication.** Sometimes called an “unfunded SPV”: the vehicle doesn’t own shares yet — the manager holds (or is pursuing) an allocation in a primary round or tender and is raising capital to fill it. This is how much of the market’s access to the most competitive rounds actually works, and it carries a real advantage: you pay the same price as every other investor in that round (net, before fees), rather than a marked-up secondary price — you are paying “market” on the underlying investment. The trade-off is execution risk: the allocation can shrink or fall through, so work with syndicators who have a track record of actually securing allocations. And understand that the deadlines here are real — the round closes when the round closes.
 
 **Before you wire into any SPV, you should be able to answer:** Does this vehicle own the shares today — and will the manager show evidence of the position? How many layers sit between me and the stock? What are the fees *at every layer*, including any exit or transfer fees? If this is not tied to a round or tender, at what price did the vehicle acquire the shares, and what am I paying per underlying share? Who is the manager, what's their track record, who does their fund administration, and how do they handle investor communications? If any of these questions changes the mood of the conversation, that may be the answer.
+
+<div class="watchlist-block">
+  <h2>Want to see trades in specific companies?</h2>
+  <p>Tell me which names you&rsquo;re watching, and when a seller appears in one of them you&rsquo;ll hear about it.</p>
+  <a class="watchlist-btn" href="https://pre-ipo.graciagroup.com/guide">Build your Pre-IPO Watchlist &rarr;</a>
+</div>
 
 ---
 

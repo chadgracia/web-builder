@@ -22,10 +22,10 @@ import { Content } from '../../guides/inside-a-pre-ipo-trade.md';
   (function () {
     var m = location.hash.match(/p=(\d+)&t=([A-Za-z0-9_-]+)/);
     if (!m) return;
-    var a = document.getElementById('watchlist-cta');
-    if (a) {
-      a.href = 'https://mrp5bv4iia7jxjfrvn67tpycsu0jqvny.lambda-url.us-east-1.on.aws/?person_id=' + m[1] + '&token=' + m[2];
-    }
+    var url = 'https://mrp5bv4iia7jxjfrvn67tpycsu0jqvny.lambda-url.us-east-1.on.aws/?person_id=' + m[1] + '&token=' + m[2];
+    document.querySelectorAll('.watchlist-btn').forEach(function (a) {
+      a.href = url;
+    });
     history.replaceState(null, '', location.pathname + location.search);
   })();
 </script>
@@ -84,20 +84,20 @@ import { Content } from '../../guides/inside-a-pre-ipo-trade.md';
     .guide-article :global(h2) { font-size: 20px; margin-top: 32px; }
   }
 
-  .watchlist-block {
+  :global(.watchlist-block) {
     margin: 44px 0 8px;
     padding: 26px 22px;
     border: 1px solid var(--border, #cdc9c0);
     border-radius: 10px;
     text-align: center;
   }
-  .watchlist-block h2 { margin: 0 0 8px; font-size: 22px; }
-  .watchlist-block p {
+  :global(.watchlist-block h2) { margin: 0 0 8px; font-size: 22px; }
+  :global(.watchlist-block p) {
     margin: 0 0 18px;
     color: var(--text-secondary);
     line-height: 1.6;
   }
-  .watchlist-btn {
+  :global(.watchlist-btn) {
     display: inline-block;
     background: var(--accent);
     color: #ffffff;
