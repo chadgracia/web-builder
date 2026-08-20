@@ -7,9 +7,10 @@ interface Props {
   title: string;
   description?: string;
   tradesSrc?: string;
+  indexable?: boolean;
 }
 
-const { title, description, tradesSrc = 'guide' } = Astro.props;
+const { title, description, tradesSrc = 'guide', indexable = false } = Astro.props;
 const tradesUrl = `https://trades.graciagroup.com/?src=${tradesSrc}`;
 ---
 
@@ -18,7 +19,8 @@ const tradesUrl = `https://trades.graciagroup.com/?src=${tradesSrc}`;
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="robots" content="noindex, nofollow" />
+    {indexable ? <meta name="robots" content="index, follow" /> : <meta name="robots" content="noindex, nofollow" />}
+    {indexable && <link rel="canonical" href={new URL(Astro.url.pathname, 'https://pre-ipo.graciagroup.com').href} />}
     <title>{title}</title>
     {description && <meta name="description" content={description} />}
     <link rel="icon" type="image/png" href="/favicon.png" />
