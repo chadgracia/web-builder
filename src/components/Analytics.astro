@@ -4,5 +4,18 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-L9JN3TRR2S');
+
+  var ggParams = new URLSearchParams(window.location.search);
+  if (ggParams.get('internal') === '1') {
+    document.cookie = 'gg_internal=1; Max-Age=63072000; Path=/; Domain=.graciagroup.com; Secure; SameSite=Lax';
+  } else if (ggParams.get('internal') === '0') {
+    document.cookie = 'gg_internal=; Max-Age=0; Path=/; Domain=.graciagroup.com; Secure; SameSite=Lax';
+  }
+  var isInternal = /(?:^|;\s*)gg_internal=1(?:;|$)/.test(document.cookie);
+
+  if (isInternal) {
+    gtag('config', 'G-L9JN3TRR2S', { traffic_type: 'internal' });
+  } else {
+    gtag('config', 'G-L9JN3TRR2S');
+  }
 </script>
