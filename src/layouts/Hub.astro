@@ -10,10 +10,12 @@ interface Props {
   slug: string;
   logo?: string;
   noShares?: boolean;
+  ctaText?: string;
   canonical?: string;
 }
-const { title, seoTitle, description, blurb, sector, slug, logo, noShares, canonical } = Astro.props;
+const { title, seoTitle, description, blurb, sector, slug, logo, noShares, ctaText, canonical } = Astro.props;
 const tradesUrl = `https://trades.graciagroup.com/?src=${slug}`;
+const bottomCtaText = ctaText ?? `To see what’s live in ${title} today, visit the full trading book →`;
 ---
 
 <!doctype html>
@@ -57,7 +59,7 @@ const tradesUrl = `https://trades.graciagroup.com/?src=${slug}`;
 
       {noShares
         ? <p class="cta-bottom no-shares"><em>No shares currently available, for information purposes only.</em></p>
-        : <p class="cta-bottom"><a class="btn" href={tradesUrl}>To see what&rsquo;s live in {title} today, visit the full trading book &rarr;</a></p>
+        : <p class="cta-bottom"><a class="btn" href={tradesUrl}>{bottomCtaText}</a></p>
       }
 
       <Disclosure />

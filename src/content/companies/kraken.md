@@ -3,6 +3,7 @@ title: "Kraken"
 seoTitle: "Can I Buy Kraken Stock Before the IPO? | Kraken Pre-IPO Shares — Gracia Group"
 description: "Kraken is still private. Learn how accredited investors buy Kraken shares on the secondary market — from a registered broker who has closed multiple Kraken transactions."
 sector: "Crypto Exchange"
+ctaText: "See Kraken Offers Now →"
 ---
 
 ## Can I buy Kraken stock before the IPO?
