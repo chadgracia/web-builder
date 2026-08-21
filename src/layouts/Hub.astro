@@ -4,6 +4,7 @@ import Disclosure from '../components/Disclosure.astro';
 interface Props {
   title: string;
   seoTitle?: string;
+  heading?: string;
   description?: string;
   blurb?: string;
   sector?: string;
@@ -13,7 +14,7 @@ interface Props {
   ctaText?: string;
   canonical?: string;
 }
-const { title, seoTitle, description, blurb, sector, slug, logo, noShares, ctaText, canonical } = Astro.props;
+const { title, seoTitle, heading, description, blurb, sector, slug, logo, noShares, ctaText, canonical } = Astro.props;
 const tradesUrl = `https://trades.graciagroup.com/?src=${slug}`;
 const bottomCtaText = ctaText ?? `To see what’s live in ${title} today, visit the full trading book →`;
 ---
@@ -42,7 +43,7 @@ const bottomCtaText = ctaText ?? `To see what’s live in ${title} today, visit 
     <main class="page">
       <div class="company-head">
         {logo && <img src={logo} alt={`${title} logo`} class="company-logo" onerror="this.style.display='none'" />}
-        <h1>{title}</h1>
+        <h1>{heading ?? title}</h1>
       </div>
       {blurb && <p class="subtitle">{blurb}</p>}
 
