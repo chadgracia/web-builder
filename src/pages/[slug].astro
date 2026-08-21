@@ -18,6 +18,7 @@ const canonical = new URL(`/${entry.id}/`, Astro.site ?? Astro.url).href;
 <Hub
   title={entry.data.title}
   seoTitle={entry.data.seoTitle}
+  heading={entry.data.heading}
   description={entry.data.description}
   blurb={entry.data.blurb}
   sector={entry.data.sector}

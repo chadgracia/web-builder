@@ -11,6 +11,7 @@ const companies = defineCollection({
   schema: z.object({
     title: z.string(),
     seoTitle: z.string().optional(),
+    heading: z.string().optional(),
     description: z.string(),
     blurb: z.string().optional(),
     sector: z.string().optional(),
