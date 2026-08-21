@@ -18,6 +18,8 @@ const companies = defineCollection({
     logo: z.string().optional(),
     noShares: z.boolean().optional(),
     ctaText: z.string().optional(),
+    topSrc: z.string().optional(),
+    bottomSrc: z.string().optional(),
   }),
 });
 

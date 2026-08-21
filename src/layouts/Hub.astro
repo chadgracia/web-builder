@@ -12,10 +12,13 @@ interface Props {
   logo?: string;
   noShares?: boolean;
   ctaText?: string;
+  topSrc?: string;
+  bottomSrc?: string;
   canonical?: string;
 }
-const { title, seoTitle, heading, description, blurb, sector, slug, logo, noShares, ctaText, canonical } = Astro.props;
-const tradesUrl = `https://trades.graciagroup.com/?src=${slug}`;
+const { title, seoTitle, heading, description, blurb, sector, slug, logo, noShares, ctaText, topSrc, bottomSrc, canonical } = Astro.props;
+const topTradesUrl = `https://trades.graciagroup.com/?src=${topSrc ?? slug}`;
+const bottomTradesUrl = `https://trades.graciagroup.com/?src=${bottomSrc ?? slug}`;
 const bottomCtaText = ctaText ?? `To see what’s live in ${title} today, visit the full trading book →`;
 ---
 
@@ -50,7 +53,7 @@ const bottomCtaText = ctaText ?? `To see what’s live in ${title} today, visit 
       {!noShares && (
         <div class="cta-callout">
           <span class="cta-callout-text">Live bids &amp; offers in {title} are open to registered users.</span>
-          <a class="btn" href={tradesUrl}>View the trading book &rarr;</a>
+          <a class="btn" href={topTradesUrl}>View the trading book &rarr;</a>
         </div>
       )}
 
@@ -60,7 +63,7 @@ const bottomCtaText = ctaText ?? `To see what’s live in ${title} today, visit 
 
       {noShares
         ? <p class="cta-bottom no-shares"><em>No shares currently available, for information purposes only.</em></p>
-        : <p class="cta-bottom"><a class="btn" href={tradesUrl}>{bottomCtaText}</a></p>
+        : <p class="cta-bottom"><a class="btn" href={bottomTradesUrl}>{bottomCtaText}</a></p>
       }
 
       <Disclosure />

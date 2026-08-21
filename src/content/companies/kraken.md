@@ -5,6 +5,8 @@ heading: "Kraken, Before the IPO"
 description: "Kraken is still private. Learn how accredited investors buy Kraken shares on the secondary market — from a registered broker who has closed multiple Kraken transactions."
 sector: "Crypto Exchange"
 ctaText: "See Kraken Offers Now →"
+topSrc: "kraken-top"
+bottomSrc: "kraken-button"
 ---
 
 ## Can I buy Kraken stock before the IPO?
