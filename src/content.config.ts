@@ -10,6 +10,7 @@ const companies = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/companies' }),
   schema: z.object({
     title: z.string(),
+    seoTitle: z.string().optional(),
     description: z.string(),
     blurb: z.string().optional(),
     sector: z.string().optional(),
