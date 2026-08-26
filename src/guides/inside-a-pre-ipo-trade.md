@@ -122,6 +122,30 @@ A counterparty who answers these readily is a counterparty you can transact with
 
 ---
 
+## Part 6: What a Decade of Closing Teaches You
+
+Everything above is the market as it's described. This is the market as it behaves.
+
+**For buyers**
+
+**The real ROFR window.** Bylaws say 30 days. The company has no incentive to meet it, and most don't. In practice the window closes when the board next meets and someone on the legal side has been reminded more than once. Plan for the bylaws' number plus a board cycle, and work with a broker who is willing to do the reminding.
+
+**Real sellers versus aspirational ones.** In any in-demand name, a large share of the "supply" is people who hope to get an allocation and are marketing it before they have it. They cost you weeks. I verify two things before a buyer hears about shares: evidence of the position or the allocation — correspondence with the company, ledger confirmation, or the equivalent — and the seller's track record. A seller who has closed before is a seller. One who hasn't is a maybe.
+
+**When a two-layer SPV beats a single layer.** Layers aren't the enemy; stacked fees are. A two-layer structure where the all-in fees are lower than the single-layer alternative, and where both managers are established, active participants in this market, is the better vehicle. Compare the number that reaches you at exit, not the count of entities on the diagram.
+
+**For sellers**
+
+**Dataroom tourists.** Some buyers have no intention of buying. They want your financials to mark their own position, or to price an SPV they're thinking of launching. The pattern: an institutional fund that already holds the security and expects not to pay a fee. I rate every buyer on likelihood to close, using their transaction history, and only introduce the ones who score highly. Your dataroom should open after that screen, not before.
+
+**The cost of a tender.** Company tenders feel like the safe liquidity path, and they often are. But in many companies, participating in a tender means giving up the right to transfer directly afterward. If you sell a portion now and expect to sell more later on your own terms, read what you're signing.
+
+**For both sides**
+
+**Three reliable ways to never close a trade.** First, negotiate the commission down. Pay market and focus on your net (seller) or gross (buyer) price. Even if you win, you've put yourself at the bottom of the list for any allocation that's in demand, and you've made it harder for your broker to source internally — at a firm with more than fifty brokers, fees are typically split with the counterparty's broker, and few will work a discounted trade. Second, resist compliance paperwork. Every delay raises a flag with everyone who will ever have to approve your trade. Third, break your word — renegotiate after introduction, or fall down on a signed trade. You will not transact with that brokerage again, and this market shares notes.
+
+---
+
 ## The Part Nobody Puts in a Guide
 
 Everything above is mechanics. What actually determines your long-term results in this market is simpler and less comfortable: this is a small, close-knit community — brokers, buyers, sellers, company CFOs, law firms — and it has a long memory. The people who misrepresent, renegotiate after introductions, commit and vanish, or treat counterparties badly find, gradually and then suddenly, that nobody brings them anything. The people who are straightforward about their goals, honor their written word, and stay courteous under stress get the first look when something rare opens up. I have watched both trajectories play out for a decade. Your reputation is the only position you hold in every trade.
