@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import Hub from '../layouts/Hub.astro';
+import GuideCta from '../components/GuideCta.astro';
 
 export async function getStaticPaths() {
   const entries = await getCollection('companies');
@@ -30,5 +31,7 @@ const canonical = new URL(`/${entry.id}/`, Astro.site ?? Astro.url).href;
   bottomSrc={entry.data.bottomSrc}
   canonical={canonical}
 >
+  <GuideCta slug={entry.id} slot="after-intro" />
   <Content />
+  <GuideCta slug={entry.id} slot="before-disclosure" />
 </Hub>

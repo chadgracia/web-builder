@@ -57,6 +57,8 @@ const bottomCtaText = ctaText ?? `To see what’s live in ${title} today, visit 
         </div>
       )}
 
+      <slot name="after-intro" />
+
       <article class="report">
         <slot />
       </article>
@@ -65,6 +67,8 @@ const bottomCtaText = ctaText ?? `To see what’s live in ${title} today, visit 
         ? <p class="cta-bottom no-shares"><em>No shares currently available, for information purposes only.</em></p>
         : <p class="cta-bottom"><a class="btn" href={bottomTradesUrl}>{bottomCtaText}</a></p>
       }
+
+      <slot name="before-disclosure" />
 
       <Disclosure />
     </main>

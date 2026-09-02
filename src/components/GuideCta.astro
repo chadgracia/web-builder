@@ -1,0 +1,42 @@
+---
+interface Props {
+  slug: string;
+}
+const { slug } = Astro.props;
+const guideUrl = `https://pre-ipo.graciagroup.com/guide?src=guide-${slug}`;
+---
+
+<aside class="guide-cta">
+  <p class="guide-cta-kicker">Free Guide: Inside a Pre-IPO Trade</p>
+  <p class="guide-cta-text">See exactly how a private-market trade works — SPV structures, fees, red flags, and the questions to ask before you wire.</p>
+  <a class="btn guide-cta-btn" href={guideUrl}>Get the Guide &rarr;</a>
+</aside>
+
+<style>
+  .guide-cta {
+    background: var(--surface, #faf8f3);
+    border: 1px solid var(--border, #e5e0d5);
+    border-radius: var(--radius-lg, 10px);
+    padding: 18px 20px;
+    margin: 28px 0;
+  }
+  .guide-cta-kicker {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--ink);
+    margin: 0 0 6px;
+  }
+  .guide-cta-text {
+    font-size: 0.95em;
+    color: var(--text-secondary, var(--ink));
+    margin: 0 0 14px;
+  }
+  .guide-cta-btn {
+    display: inline-block;
+  }
+  @media (max-width: 640px) {
+    .guide-cta { padding: 16px; }
+    .guide-cta-btn { display: block; text-align: center; }
+  }
+</style>
