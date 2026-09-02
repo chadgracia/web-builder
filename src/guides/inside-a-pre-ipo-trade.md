@@ -110,7 +110,7 @@ After ten years, I can usually tell in one conversation whether a counterparty i
 
 **No compliance.** If nobody has asked you to verify who you are, be worried, not relieved. KYC/AML isn't friction; it's evidence you're dealing with a regulated counterparty who has something to lose. The absence of process is the presence of risk.
 
-**A price too good.** Meaningfully below market and the ROFR takes it. Meaningfully above and it won't close. Exceptional deals exist in this market — I’ve seen a few, but mostly only in retrospect.
+**A price too good.** Meaningfully below market and the ROFR takes it. Meaningfully above and it won't close. Exceptional deals exist in this market — I’ve seen a few, but they are mostly only recognizable in retrospect.
 
 **Shape-shifting counterparties.** The "buyer" who turns out to be an intermediary for the real buyer. The "seller" collecting your cash to go try to buy shares they don't hold. The counterparty who agrees on terms, takes the introduction, then renegotiates directly. All three are known species. All three end relationships permanently — this market shares notes on bad actors.
 
