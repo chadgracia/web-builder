@@ -48,7 +48,7 @@ One more cost note while we're being concrete: some companies charge a transfer 
 
 When a company blocks direct transfers — and more of the most sought-after names do every year — the SPV (Special Purpose Vehicle, or "fund") is usually the only door in. An SPV holds the shares; you buy an interest in the SPV. Simple in principle. In practice, the more sought after the underlying security, the more exotic the SPV can be, and the more layers.
 
-**The clean SPV.** A single-layer vehicle — the fund itself owns the shares — with no management fee and no carry. In the market's shorthand: 0/0. These exist. I've placed clients into them. Since the manager is not making any money on the SPV itself, these are generally priced a bit above the company’s most recent round.
+**The clean SPV.** A single-layer vehicle — the fund itself owns the shares — with no management fee and no carry. In the market's shorthand: 0/0. These exist and I've placed clients into them. Since the manager is not making any money on the SPV itself, these are generally priced a bit above the company’s most recent round or current market.
 
 **The standard SPV.** A fee structure written as two numbers: management fee / carry. 1/10 means 1% per year in management fees and 10% of the profits at exit. 2/20 is the traditional private-fund structure. Whether these are acceptable depends on what you're getting: real allocation access in a name you cannot otherwise touch may be worth 2/20. A riskier or less well known name may sell for 1/10. It all comes down to the market: if there are $10M of buyers and the seller has $5M of supply, the trade fills with those willing to pay 2/20 first. If there is only $1M of demand, fees may have to come down to 0/5.
 
