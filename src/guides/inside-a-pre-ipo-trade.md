@@ -104,7 +104,7 @@ After ten years, I can usually tell in one conversation whether a counterparty i
 
 **"Allocation" without substance.** "We have allocation" can mean a signed agreement for a specific dollar amount in a specific round — or it can mean "we know someone who says they can get us in."
 
-**Haste.** When you're being rushed, ask whose deadline you're serving. An unfunded SPV manager racing to raise, a broker chasing quarter-end — their urgency is not your urgency. (After a trade is matched and the transfer process is running, prompt responses genuinely matter. Before commitment, pressure is a flag.)
+**Haste.** When you're being rushed, ask whose deadline you're serving. A syndicator racing to raise, a broker chasing quarter-end — their urgency is not your urgency. (After a trade is matched and the transfer process is running, prompt responses genuinely matter. Before commitment, pressure is often a flag.) Of course, if you're buying an SPV interest tied to a round, then the deadline is real.
 
 **Fortune-telling.** A broker's job is to facilitate transactions, not predict markets. When the pitch leans on where the price is going rather than what the trade *is* — structure, class, fees, process — you're hearing a story, not an offer. Ask for data: firm bids, asks, recent crossed trades.
 
