@@ -19,7 +19,8 @@ interface Props {
 const { title, seoTitle, heading, description, blurb, sector, slug, logo, noShares, ctaText, topSrc, bottomSrc, canonical } = Astro.props;
 const topTradesUrl = `https://trades.graciagroup.com/?src=${topSrc ?? slug}`;
 const bottomTradesUrl = `https://trades.graciagroup.com/?src=${bottomSrc ?? slug}`;
-const bottomCtaText = ctaText ?? `To see what’s live in ${title} today, visit the full trading book →`;
+const companyName = title.split('—')[0].trim();
+const bottomCtaText = ctaText ?? `To see what’s live in ${companyName} today, visit the full trading book →`;
 ---
 
 <!doctype html>
@@ -52,7 +53,7 @@ const bottomCtaText = ctaText ?? `To see what’s live in ${title} today, visit 
 
       {!noShares && (
         <div class="cta-callout">
-          <span class="cta-callout-text">Live bids &amp; offers in {title} are open to registered users.</span>
+          <span class="cta-callout-text">Live bids &amp; offers in {companyName} are open to registered users.</span>
           <a class="btn" href={topTradesUrl}>View the trading book &rarr;</a>
         </div>
       )}
