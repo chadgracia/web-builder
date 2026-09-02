@@ -152,7 +152,7 @@ Everything above is mechanics. What actually determines your long-term results i
 
 And the permanent rule, which no structure or diligence changes: never invest more in this market than you could comfortably lose. Private securities can go to zero. The preference stack can leave common holders with nothing. Liquidity can fail to arrive for years past any plan. Treat every dollar you place here as a dollar you can wait on indefinitely — or lose entirely — and you'll make better decisions with all of them.
 
-If you've read this far, you know more about how this market actually works than most people transacting in it. When you want to talk about a specific situation — a position you hold, a name you're pursuing, an SPV structure you'd like a second opinion on — I'm at [**cgracia@rainmakersecurities.com**](mailto:cgracia@rainmakersecurities.com), and current research is at [**pre-ipo.graciagroup.com**](https://pre-ipo.graciagroup.com/).
+If you've read this far, you know more about how this market actually works than most people transacting in it. When you want to talk about a specific situation — a position you hold, a name you're pursuing, an SPV structure you'd like a second opinion on — I'm at [**cgracia@rainmakersecurities.com**](mailto:cgracia@rainmakersecurities.com), and happy to answer questions you may have.
 
 Chad Gracia   
 Registered Representative, Rainmaker Securities, LLC
