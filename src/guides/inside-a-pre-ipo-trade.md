@@ -102,7 +102,7 @@ After ten years, I can usually tell in one conversation whether a counterparty i
 
 **Phantom inventory.** The most common failure in this market: shares that are talked about but never materialize. The offer is real; the shares aren't. The tell is specificity — real supply comes with a share class, an approximate size, a seller category, and a willingness to verify ownership through proper channels. Vague supply is no supply.
 
-**"Allocation" without substance.** "We have allocation" can mean a signed agreement for a specific dollar amount in a specific round — or it can mean "we know someone who says they can get us in." The word is doing a lot of work. Make it show its papers.
+**"Allocation" without substance.** "We have allocation" can mean a signed agreement for a specific dollar amount in a specific round — or it can mean "we know someone who says they can get us in."
 
 **Haste.** When you're being rushed, ask whose deadline you're serving. An unfunded SPV manager racing to raise, a broker chasing quarter-end — their urgency is not your urgency. (After a trade is matched and the transfer process is running, prompt responses genuinely matter. Before commitment, pressure is a flag.)
 
