@@ -132,7 +132,7 @@ Everything above is the market as it's described. This is the market as it behav
 
 **Real sellers versus aspirational ones.** In any in-demand name, a large share of the "supply" is people who hope to get an allocation and are marketing it before they have it. They cost you weeks. I verify two things before a buyer hears about shares: evidence of the position or the allocation — correspondence with the company, ledger confirmation, or the equivalent — and the seller's track record.
 
-**When a two-layer SPV beats a single layer.** Layers aren't the enemy; stacked fees are. A two-layer structure where the all-in fees are lower than the single-layer alternative, and where both managers are established, active participants in this market, is the better vehicle. Compare the number that reaches you at exit, not the count of entities on the diagram.
+**When a two-layer SPV beats a single layer.** Layers aren't the enemy; stacked fees are. A two-layer structure where the all-in fees are lower than the single-layer alternative, and where both managers are established, active participants in this market, may be the better vehicle. Compare the number that reaches you at exit, not the count of entities on the diagram.
 
 **For sellers**
 
