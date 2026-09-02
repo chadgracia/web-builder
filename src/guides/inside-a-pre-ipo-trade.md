@@ -130,7 +130,7 @@ Everything above is the market as it's described. This is the market as it behav
 
 **The real ROFR window.** Bylaws say 30 days. The company has no incentive to meet it, and most don't. In practice the window closes when the board next meets and someone on the legal side has been reminded more than once. Plan for the bylaws' number plus a board cycle, and work with a broker who is willing to do the reminding.
 
-**Real sellers versus aspirational ones.** In any in-demand name, a large share of the "supply" is people who hope to get an allocation and are marketing it before they have it. They cost you weeks. I verify two things before a buyer hears about shares: evidence of the position or the allocation — correspondence with the company, ledger confirmation, or the equivalent — and the seller's track record. A seller who has closed before is a seller. One who hasn't is a maybe.
+**Real sellers versus aspirational ones.** In any in-demand name, a large share of the "supply" is people who hope to get an allocation and are marketing it before they have it. They cost you weeks. I verify two things before a buyer hears about shares: evidence of the position or the allocation — correspondence with the company, ledger confirmation, or the equivalent — and the seller's track record.
 
 **When a two-layer SPV beats a single layer.** Layers aren't the enemy; stacked fees are. A two-layer structure where the all-in fees are lower than the single-layer alternative, and where both managers are established, active participants in this market, is the better vehicle. Compare the number that reaches you at exit, not the count of entities on the diagram.
 
