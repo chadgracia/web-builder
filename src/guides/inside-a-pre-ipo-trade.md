@@ -46,7 +46,7 @@ One more cost note while we're being concrete: some companies charge a transfer 
 
 ## Part 2: The Many Flavors of SPVs — and Which to Avoid
 
-When a company blocks direct transfers — and more of the most sought-after names do every year — the SPV (Special Purpose Vehicle, or "fund") is usually the only door in. An SPV holds the shares; you buy an interest in the SPV. Simple in principle. In practice, SPVs come in flavors, and the flavor determines whether the structure is a reasonable access vehicle or a fee machine wearing one's clothes.
+When a company blocks direct transfers — and more of the most sought-after names do every year — the SPV (Special Purpose Vehicle, or "fund") is usually the only door in. An SPV holds the shares; you buy an interest in the SPV. Simple in principle. In practice, the more sought after the underlying security, the more exotic the SPV can be, and the more layers.
 
 **The clean SPV.** A single-layer vehicle — the fund itself owns the shares — with no management fee and no carry. In the market's shorthand: 0/0. These exist. I've placed clients into them. Since the manager is not making any money on the SPV itself, these are generally priced a bit above the company’s most recent round.
 
