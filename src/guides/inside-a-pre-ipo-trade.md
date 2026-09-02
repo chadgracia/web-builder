@@ -142,7 +142,7 @@ Everything above is the market as it's described. This is the market as it behav
 
 **For both sides**
 
-**Three reliable ways to never close a trade.** First, negotiate the commission down. Pay market and focus on your net (seller) or gross (buyer) price. Even if you win, you've put yourself at the bottom of the list for any allocation that's in demand, and you've made it harder for your broker to source internally — at a firm with more than fifty brokers, fees are typically split with the counterparty's broker, and few will work a discounted trade. Second, resist compliance paperwork. Every delay raises a flag with everyone who will ever have to approve your trade. Third, break your word — renegotiate after introduction, or fall down on a signed trade. You will not transact with that brokerage again, and this market shares notes.
+**Three reliable ways to never close a trade.** First, grind on the commission. Instead, pay market rate for brokerage and negotiate the number that actually matters: your net proceeds as a seller, or your all-in price as a buyer. Win the commission fight and you've still lost — you drop to the bottom of the list the next time an in-demand allocation appears, and you shrink your broker's ability to find the other side: at a firm of fifty-plus brokers, the fee is typically split with the counterparty's broker, and nobody works hard on a discounted split. Second, treat compliance paperwork as an insult. Every form you stall on raises a flag with someone who will later have to approve your trade. Third, break your word — retrade after the introduction is made, or walk from a signed deal. Do it once and that brokerage is done with you, and brokers talk.
 
 ---
 
