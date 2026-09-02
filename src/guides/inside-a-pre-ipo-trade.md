@@ -136,7 +136,7 @@ Everything above is the market as it's described. This is the market as it behav
 
 **For sellers**
 
-**Dataroom tourists.** Some buyers have no intention of buying. They want your financials to mark their own position, or to price an SPV they're thinking of launching. The pattern: an institutional fund that already holds the security and expects not to pay a fee. I rate every buyer on likelihood to close, using their transaction history, and only introduce the ones who score highly. Your dataroom should open after that screen, not before.
+**Dataroom tourists.** Some buyers have no intention of buying. They want your deal details to help mark their own position, or to price an SPV they're thinking of launching, or to determine if a direct transfer (which doesn't come with information) is well-priced. The broker's job is to filter out these groups before an intro is made.
 
 **The cost of a tender.** Company tenders feel like the safe liquidity path, and they often are. But in many companies, participating in a tender means giving up the right to transfer directly afterward. If you sell a portion now and expect to sell more later on your own terms, read what you're signing.
 
