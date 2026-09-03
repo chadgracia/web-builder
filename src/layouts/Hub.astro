@@ -16,11 +16,9 @@ interface Props {
   bottomSrc?: string;
   canonical?: string;
 }
-const { title, seoTitle, heading, description, blurb, sector, slug, logo, noShares, ctaText, topSrc, bottomSrc, canonical } = Astro.props;
+const { title, seoTitle, heading, description, blurb, sector, slug, logo, noShares, topSrc, canonical } = Astro.props;
 const topTradesUrl = `https://trades.graciagroup.com/?src=${topSrc ?? slug}`;
-const bottomTradesUrl = `https://trades.graciagroup.com/?src=${bottomSrc ?? slug}`;
 const companyName = title.split('—')[0].trim();
-const bottomCtaText = ctaText ?? `To see what’s live in ${companyName} today, visit the full trading book →`;
 ---
 
 <!doctype html>
@@ -64,11 +62,6 @@ const bottomCtaText = ctaText ?? `To see what’s live in ${companyName} today, 
         <slot />
       </article>
 
-      {noShares
-        ? <p class="cta-bottom no-shares"><em>No shares currently available, for information purposes only.</em></p>
-        : <p class="cta-bottom"><a class="btn" href={bottomTradesUrl}>{bottomCtaText}</a></p>
-      }
-
       <slot name="before-disclosure" />
 
       <Disclosure />
@@ -85,9 +78,6 @@ const bottomCtaText = ctaText ?? `To see what’s live in ${companyName} today, 
   .company-logo { height: 48px; width: auto; object-fit: contain; }
   .cta-callout { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; background: #faf8f3; border-left: 4px solid var(--accent); padding: 14px 18px; border-radius: 6px; margin: 22px 0 28px; }
   .cta-callout-text { font-size: 0.98em; color: var(--ink); }
-  .cta-bottom { margin-top: 32px; }
-  .cta-bottom.no-shares { color: var(--text-muted); font-size: 0.95em; }
   .report :global(h2) { margin-top: 8px; }
   @media (max-width: 640px) { .page { padding: 24px; } }
-  @media (min-width: 1200px) { .page { margin-right: clamp(0px, calc(956px - 50vw), 356px); } }
 </style>
