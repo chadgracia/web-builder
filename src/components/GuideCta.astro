@@ -144,22 +144,28 @@ const guideUrl = `https://pre-ipo.graciagroup.com/guide?src=guide-${slug}`;
       return;
     }
 
-    var MIN_GAP = 360;
+    var MIN_GAP = 340;
     var MIN_VIEWPORT = 1200;
 
-    function hasRoom() {
-      if (window.innerWidth < MIN_VIEWPORT) return false;
-      var article =
+    function getContentElement() {
+      return (
         document.querySelector('main.page article.report') ||
-        document.querySelector('main.page');
-      if (!article) return false;
-      var rect = article.getBoundingClientRect();
-      return window.innerWidth - rect.right >= MIN_GAP;
+        document.querySelector('main.page')
+      );
     }
 
     function updateVisibility() {
       if (!panel.isConnected) return;
-      if (hasRoom()) {
+      var content = getContentElement();
+      var rect = content ? content.getBoundingClientRect() : null;
+      var hasRoom =
+        window.innerWidth >= MIN_VIEWPORT &&
+        rect &&
+        window.innerWidth - rect.right >= MIN_GAP;
+
+      if (hasRoom) {
+        panel.style.left = rect.right + 40 + 'px';
+        panel.style.right = 'auto';
         panel.classList.add('is-visible');
       } else {
         panel.classList.remove('is-visible');
