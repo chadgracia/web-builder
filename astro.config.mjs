@@ -7,7 +7,7 @@ export default defineConfig({
   site: 'https://pre-ipo.graciagroup.com',
   integrations: [
     sitemap({
-      filter: (page) => !page.includes('/guide/thanks'),
+      filter: (page) => !page.endsWith('/guide/') && !page.includes('/guide/thanks'),
     }),
   ],
   markdown: {

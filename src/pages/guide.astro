@@ -3,7 +3,6 @@ import Landing from '../layouts/Landing.astro';
 ---
 
 <Landing
-  indexable={true}
   title="Inside a Pre-IPO Trade: A Guide for Accredited Investors"
   description="A working broker's guide to how private secondary transactions actually happen — the mechanics, the structures, and the traps. By Chad Gracia, Gracia Group."
 >
@@ -66,7 +65,10 @@ import Landing from '../layouts/Landing.astro';
 
     <h2>About the author</h2>
 
-    <p>Chad Gracia has spent 25 years advising venture funds and high-net-worth investors on private markets &mdash; the last ten focused exclusively on pre-IPO secondaries. For six years he directed the U.S. Commerce Department&rsquo;s private equity and venture capital trade missions to the Middle East. He is a registered representative of Rainmaker Securities, LLC, member FINRA/SIPC.</p>
+    <div class="author">
+      <img src="/chad-gracia.jpg" alt="Chad Gracia" class="author-photo" />
+      <p>Chad Gracia has spent 25 years advising venture funds and high-net-worth investors on private markets &mdash; the last ten focused exclusively on pre-IPO secondaries. For six years he directed the U.S. Commerce Department&rsquo;s private equity and venture capital trade missions to the Middle East. He is a registered representative of Rainmaker Securities, LLC, member FINRA/SIPC.</p>
+    </div>
 
     <p class="disclaimer"><em>Private securities are speculative, illiquid, and involve a high degree of risk, including possible loss of the entire investment. They are suitable only for accredited investors. This page is for informational purposes and is not an offer to sell or a solicitation of an offer to buy any security.</em></p>
   </article>
@@ -111,6 +113,25 @@ import Landing from '../layouts/Landing.astro';
   }
 
   .friction { font-weight: 600; color: var(--ink); }
+
+  .author {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .author-photo {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: var(--radius-lg);
+    flex-shrink: 0;
+  }
+  .author p { margin: 0; }
+
+  @media (max-width: 480px) {
+    .author { flex-direction: column; }
+    .author-photo { margin: 0 auto; }
+  }
 
   .disclaimer {
     font-size: 13px;
