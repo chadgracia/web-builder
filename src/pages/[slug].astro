@@ -31,7 +31,6 @@ const canonical = new URL(`/${entry.id}/`, Astro.site ?? Astro.url).href;
   bottomSrc={entry.data.bottomSrc}
   canonical={canonical}
 >
-  <GuideCta slug={entry.id} slot="after-intro" />
   <Content />
   <GuideCta slug={entry.id} slot="before-disclosure" />
 </Hub>
