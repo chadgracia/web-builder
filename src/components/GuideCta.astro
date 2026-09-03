@@ -6,193 +6,49 @@ const { slug } = Astro.props;
 const guideUrl = `https://pre-ipo.graciagroup.com/guide?src=guide-${slug}`;
 ---
 
-<aside class="guide-cta-float" id="guide-cta-float">
-  <button type="button" class="guide-cta-float-dismiss" id="guide-cta-float-dismiss" aria-label="Dismiss">&times;</button>
-  <p class="guide-cta-float-kicker">Free Guide</p>
-  <p class="guide-cta-float-title">Inside a Pre-IPO Trade</p>
-  <p class="guide-cta-float-text">See exactly how a private-market trade works — SPV structures, fees, red flags, and the questions to ask before you wire.</p>
-  <a class="btn guide-cta-float-btn" href={guideUrl}>Get the Guide &rarr;</a>
-</aside>
-
 <aside class="guide-cta">
-  <p class="guide-cta-kicker">Free Guide: Inside a Pre-IPO Trade</p>
+  <p class="guide-cta-kicker">Free Guide</p>
+  <p class="guide-cta-title">Inside a Pre-IPO Trade</p>
   <p class="guide-cta-text">See exactly how a private-market trade works — SPV structures, fees, red flags, and the questions to ask before you wire.</p>
   <a class="btn guide-cta-btn" href={guideUrl}>Get the Guide &rarr;</a>
 </aside>
 
 <style>
-  .guide-cta-float {
-    position: fixed;
-    top: 150px;
-    right: 32px;
-    width: 296px;
+  .guide-cta {
     background: var(--surface, #faf8f3);
     border: 1px solid var(--border, #e5e0d5);
     border-top: 3px solid var(--accent, #b8925a);
     border-radius: var(--radius-lg, 10px);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04), 0 12px 32px rgba(0, 0, 0, 0.08);
-    padding: 22px 22px 20px;
-    z-index: 40;
-    opacity: 0;
-    transform: translateX(24px);
-    transition: opacity 0.4s ease, transform 0.4s ease;
-    pointer-events: none;
-  }
-  .guide-cta-float.is-visible {
-    opacity: 1;
-    transform: translateX(0);
-    pointer-events: auto;
-  }
-  .guide-cta-float-dismiss {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 24px;
-    height: 24px;
-    border: none;
-    background: transparent;
-    color: var(--text-secondary, var(--ink));
-    font-size: 1.1rem;
-    line-height: 1;
-    cursor: pointer;
-    padding: 0;
-    opacity: 0.5;
-  }
-  .guide-cta-float-dismiss:hover {
-    opacity: 1;
-  }
-  .guide-cta-float-kicker {
-    font-family: var(--font-display);
-    font-weight: 600;
-    font-size: 0.7rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--accent, #b8925a);
-    margin: 0 0 8px;
-  }
-  .guide-cta-float-title {
-    font-family: var(--font-display);
-    font-weight: 600;
-    font-size: 1.15rem;
-    line-height: 1.3;
-    color: var(--ink);
-    margin: 0 0 10px;
-  }
-  .guide-cta-float-text {
-    font-size: 0.88rem;
-    line-height: 1.5;
-    color: var(--text-secondary, var(--ink));
-    margin: 0 0 16px;
-  }
-  .guide-cta-float-btn {
-    display: block;
-    width: 100%;
-    text-align: center;
-    box-sizing: border-box;
-  }
-  @media (max-width: 1199px) {
-    .guide-cta-float {
-      display: none;
-    }
-  }
-
-  .guide-cta {
-    background: var(--surface, #faf8f3);
-    border: 1px solid var(--border, #e5e0d5);
-    border-radius: var(--radius-lg, 10px);
-    padding: 18px 20px;
+    padding: 28px 32px;
     margin: 28px 0;
   }
   .guide-cta-kicker {
     font-family: var(--font-display);
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent, #b8925a);
+    margin: 0 0 8px;
+  }
+  .guide-cta-title {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 1.35rem;
+    line-height: 1.3;
     color: var(--ink);
-    margin: 0 0 6px;
+    margin: 0 0 10px;
   }
   .guide-cta-text {
     font-size: 0.95em;
     color: var(--text-secondary, var(--ink));
-    margin: 0 0 14px;
+    margin: 0 0 16px;
   }
   .guide-cta-btn {
     display: inline-block;
   }
   @media (max-width: 640px) {
-    .guide-cta { padding: 16px; }
+    .guide-cta { padding: 18px 20px; }
     .guide-cta-btn { display: block; text-align: center; }
   }
-  @media (min-width: 1200px) {
-    .guide-cta {
-      display: none;
-    }
-  }
 </style>
-
-<script is:inline>
-  (function () {
-    var panel = document.getElementById('guide-cta-float');
-    if (!panel) return;
-
-    var dismissed = false;
-    try {
-      dismissed = sessionStorage.getItem('guideCtaDismissed') === '1';
-    } catch (e) {}
-
-    if (dismissed) {
-      panel.remove();
-      return;
-    }
-
-    var MIN_GAP = 340;
-    var MIN_VIEWPORT = 1200;
-
-    function getContentElement() {
-      return (
-        document.querySelector('main.page article.report') ||
-        document.querySelector('main.page')
-      );
-    }
-
-    function updateVisibility() {
-      if (!panel.isConnected) return;
-      var content = getContentElement();
-      var rect = content ? content.getBoundingClientRect() : null;
-      var hasRoom =
-        window.innerWidth >= MIN_VIEWPORT &&
-        rect &&
-        window.innerWidth - rect.right >= MIN_GAP;
-
-      if (hasRoom) {
-        panel.style.left = rect.right + 40 + 'px';
-        panel.style.right = 'auto';
-        panel.classList.add('is-visible');
-      } else {
-        panel.classList.remove('is-visible');
-      }
-    }
-
-    var resizeTimer = null;
-    window.addEventListener('resize', function () {
-      clearTimeout(resizeTimer);
-      resizeTimer = setTimeout(updateVisibility, 150);
-    });
-
-    window.addEventListener('load', function () {
-      setTimeout(updateVisibility, 400);
-    });
-
-    var dismissBtn = document.getElementById('guide-cta-float-dismiss');
-    if (dismissBtn) {
-      dismissBtn.addEventListener('click', function () {
-        panel.classList.remove('is-visible');
-        try {
-          sessionStorage.setItem('guideCtaDismissed', '1');
-        } catch (e) {}
-        setTimeout(function () {
-          panel.remove();
-        }, 400);
-      });
-    }
-  })();
-</script>
