@@ -1,10 +1,12 @@
 ---
 title: "Tenstorrent"
 seoTitle: "How to Invest in Tenstorrent: Series E, Stock & Pre-IPO Shares (2026)"
-heading: "How to Invest in Tenstorrent: Series E, Stock & Pre-IPO Shares (2026)"
+heading: "Tenstorrent, Before the IPO"
 description: "Tenstorrent stock isn't publicly traded. Here's how accredited investors access Tenstorrent shares through secondaries and SPVs — Series E context, the reported Qualcomm talks, and what a realistic deal looks like."
-blurb: "The open-architecture AI chip company led by Jim Keller — accessible pre-IPO through secondaries and SPVs, with reported Qualcomm acquisition talks reshaping the calculus."
 sector: "AI Infrastructure / Semiconductors"
+ctaText: "See Tenstorrent Offers Now →"
+topSrc: "tenstorrent-top"
+bottomSrc: "tenstorrent-button"
 ---
 
 Tenstorrent is the AI chip company led by Jim Keller — the semiconductor architect behind chips at Apple, AMD, Tesla, and Intel. Founded in 2016 and headquartered in Toronto, it designs RISC-V-based AI accelerators (Grayskull, Wormhole, Blackhole) alongside an open-source software stack, positioning itself as the open-architecture alternative to Nvidia's closed ecosystem.
