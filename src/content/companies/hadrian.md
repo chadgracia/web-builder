@@ -1,39 +1,46 @@
 ---
-title: "Hadrian — The Factory as a Product"
-description: "A research note on Hadrian, the automated-manufacturing company rebuilding America's defense industrial base, following its $2.4B Navy submarine partnership — with shares available directly."
+title: "Hadrian"
+seoTitle: "How to Invest in Hadrian: Stock, Series D & Pre-IPO Shares (2026)"
+heading: "Hadrian, Before the IPO"
+description: "Hadrian stock isn't publicly traded. Here's how accredited investors access Hadrian shares through secondaries and SPVs — the $7.87B Series D, the defense manufacturing thesis, and what a realistic deal looks like."
 sector: "Defense / Advanced Manufacturing"
+logo: "https://bannerlogos.s3.us-east-1.amazonaws.com/Hadrian.png"
+ctaText: "See Hadrian Offers Now →"
+topSrc: "hadrian-top"
+bottomSrc: "hadrian-button"
 ---
 
-America can design a submarine. It can barely build one. Hadrian is a bet that the constraint is not engineering or money but the physical capacity to make things — and that the fix is a factory rebuilt from software up.
+Hadrian builds the factories that build American defense hardware. Founded in 2021 by Chris Power, the Los Angeles company operates highly automated manufacturing facilities — combining software, AI, robotics, and process engineering — producing precision components for submarines, satellites, munitions, and aircraft for customers including the Pentagon and Lockheed Martin. Its "Factories-as-a-Service" model and Opus software platform position it as the production infrastructure of U.S. reindustrialization rather than another weapons developer.
 
-Chris Power is Australian. He moved to the United States in 2019, convinced its industrial base was in decline, and founded the company the following year. He named it after the Roman emperor remembered for fortifying his empire rather than expanding it, which tells you the whole thesis in one word.
+In August 2026, Hadrian announced a $1.37 billion Series D at a $7.87 billion post-money valuation — roughly five times its valuation from a year earlier. The round was co-led by WCM Investment Management, Washington Harbour Partners, Valor Equity Partners, 137 Ventures, and Baillie Gifford, with JPMorgan Chase's Strategic Investment Group as anchor co-lead, and participation from Apollo-managed funds, T. Rowe Price-advised accounts, CapitalG, Andreessen Horowitz, Founders Fund, Lux Capital, and 1789 Capital. Its Factory 4 project in Alabama pairs more than $1.5 billion of private capital with $900 million in Navy funding to make components for Virginia- and Columbia-class submarines.
 
-**What it does.** Hadrian builds and runs automated factories that produce precision metal components — the machined, welded, and cast parts inside rockets, satellites, missiles, fighter jets, drones, and submarines. Tolerances measured in microns, not millimeters. Historically this work has been done by hundreds of small independent machine shops staffed by an aging workforce, and those shops have been closing.
+## Can you buy Hadrian stock?
 
-The company sells three ways: parts to specification, dedicated production capacity reserved for a single customer, and entire factories it designs and operates on a customer's behalf — a model it calls Factories as a Service. Underneath all of it is software the company calls Opus, which it describes as an operating system for factory autonomy. Opus ingests legacy part designs, including hand-drawn blueprints, converts them into digital models, and automates the machining, scheduling, and inspection around them. Hadrian says a factory can be brought online in roughly six months, that its machines run at four times the uptime with a tenth of the usual labor, and that parts ship ten times faster at roughly half the cost of legacy suppliers.
+Not on any exchange — Hadrian is private, with no ticker. Accredited investors get exposure through:
 
-The labor story is the part that surprises people. Close to all of Hadrian's factory workers had never set foot in a factory. They come from hospitality, retail, nursing. The company trains them in about thirty days and pays above local rates. The argument is inverted from the usual one about automation: Hadrian's position is that heavy automation is precisely what makes hiring at scale possible again, because a skills gap that took forty years to open cannot be closed by finding more machinists who do not exist.
+1. **Direct secondary purchases** — buying outstanding shares from an existing shareholder, subject to company transfer restrictions and rights of first refusal.
+2. **Special purpose vehicles (SPVs)** — pooled vehicles holding Hadrian shares at smaller minimums than a direct block requires.
 
-**Where it stands.** Four factories. The original in Hawthorne, California; the headquarters and R&D operation in Torrance; Factory 3 in Mesa, Arizona, a $200 million, 270,000-square-foot site; and Factory 4 in Cherokee, Alabama, near Muscle Shoals — 2.2 million square feet on 46 acres, opened in March 2026, with up to a thousand employees planned.
+Unlike some peers, there is no meaningful public-proxy route — Hadrian's cap table is dominated by private funds and strategics.
 
-Factory 4 is the milestone. It exists to serve a public-private partnership with the US Navy announced the same month: roughly $1.5 billion in private capital combined with $900 million in government funding, totalling about $2.4 billion, to build three facilities producing components for the Virginia- and Columbia-class submarine programs. Navy Secretary John Phelan called it a novel transaction in which the service invests in outcomes rather than promises. Factory 4 is expected to begin producing components by the end of 2026 and to reach full capacity within two years. The two remaining facilities, focused on castings and forgings, have not yet been announced.
+## The Series D and where the valuation stands
 
-Hadrian has also built a partnership with Anduril to supply precision components for its autonomous systems, acquired Datum Source in 2024, partnered with Dirac on model-based manufacturing, and is a founding member of the New American Industrial Alliance alongside Anduril, Palantir, 8VC, and General Catalyst.
+The markup deserves scrutiny in both directions. Five-x in thirteen months, against a Series C of $260 million a year earlier, reflects genuine expansion — the factory footprint grew to four sites, Navy submarine work landed, and defense-industrial capital is flooding the category (Anduril at a reported $60+ billion, Shield AI at $12.7 billion, Saronic at $9.25 billion). But it also means much of the value exists at a fresh private mark, without disclosed revenue that independently anchors it. If the next round prices flat, secondary buyers at Series D levels wear that.
 
-**Why this might be interesting.** The problem Hadrian sells into is arithmetic, not sentiment. The Navy's first submarine production czar, Vice Admiral Robert Gaucher, described his job publicly as a math problem: the fleet needs on the order of 70 million additional workforce hours a year, and the yards cannot hire them because the trained people do not exist. Altimeter, one of Hadrian's investors, puts the annual shortfall on the Virginia and Columbia programs alone at roughly 50 million hours. Since 2018 the Navy has put approximately $9.8 billion into the submarine industrial base and the cadence still is not there. Power's line to reporters was blunt: the number one problem is that there are not enough skilled workers, so we have to automate our way out of it. If you gave him a billion dollars and told him to hire a million welders, he could not do it.
+The structural bet is straightforward: U.S. defense production demand exceeds trusted domestic manufacturing capacity, the government is spending to close that gap, and Hadrian sells the capacity itself rather than competing on any single weapons program. That's a different — arguably more durable — position than a program-dependent prime or startup.
 
-Second, the unit economics are the reason a metal-cutting business is being discussed in software multiples. Altimeter says Hadrian runs its factories at 65% to 80% utilization against an industry baseline nearer 10%. Keep expensive machines busy and returns on capital start to look unlike heavy industry. Power has said roughly 80% of revenue sits in three-to-seven-year production contracts, which is a different quality of revenue than surge orders that vanish when a war ends.
+## How access actually works
 
-Third, and least discussed: the Navy partnership converts Hadrian from a supplier into something closer to co-owned national infrastructure. The government has skin in these three factories. That is a hard position for a competitor to attack and a hard one for a future administration to unwind quickly.
+Hadrian secondaries trade through brokers and SPV syndicators, typically with minimums from $100,000 upward. Because the company is private, expect:
 
-**Funding.** Founders Fund, Lux Capital, and Construct Capital seeded the company in 2021. Andreessen Horowitz joined at the Series B in 2022. In July 2025 Hadrian closed a $260 million Series C led by Founders Fund and Lux, alongside a debt facility arranged by Morgan Stanley. Six months later it raised an extension at a $1.6 billion valuation led by T. Rowe Price, with Altimeter, D1 Capital, StepStone, 1789 Capital, a16z, Founders Fund, Lux, and Construct participating. Reported totals vary by source — Tracxn puts lifetime funding at roughly $730 million, PitchBook at $611 million.
+- **Transfer restrictions.** Hadrian can block or delay transfers; many trades settle through existing SPVs.
+- **Thin, fast-moving supply.** Fresh mega-rounds reduce seller urgency; blocks that do appear tend to clear quickly at or near the last-round mark.
+- **Information asymmetry.** Revenue and backlog details are not public; work with intermediaries who disclose what is and isn't confirmable.
 
-On 23 June 2026, Bloomberg reported that Hadrian had discussed raising as much as $1 billion at a valuation near $7.5 billion, excluding any additional debt. A company spokesperson told Bloomberg the information was "inaccurate" and declined to elaborate. The last confirmed mark remains $1.6 billion.
+At the time of writing, we have visibility into live Hadrian secondary supply, including allocations accepting indications from accredited investors. Terms, pricing, and structure are available on request to qualified investors.
 
-**The current opportunity.** We have shares available directly. Reply and we can share what we have.
+## Is Hadrian worth the risk?
 
-**Worth keeping in mind.** Start with the revenue. Hadrian booked roughly $3 million in its first commercial year and management has claimed tenfold year-over-year growth since. Even generous compounding from that base leaves a company whose revenue is small in relation to a $1.6 billion mark, let alone a rumored $7.5 billion one. Kaman, a legacy aerospace machining business founded in 1945, did $775 million of revenue in 2023 and was taken private for $1.8 billion. That comparison is unfair in both directions, and it is worth sitting with anyway.
+The bull case: a five-x markup validated by JPMorgan, Apollo, and T. Rowe Price capital; Navy-funded factory expansion; a defense budget supercycle; and a picks-and-shovels position in reindustrialization that doesn't depend on winning any single program. The bear case: a rich fresh mark without public revenue disclosure, execution risk in scaling factories (a famously hard business), political dependency on sustained defense spending, and the standard private-market risks — illiquidity, limited information, and no committed exit.
 
-Then the capital. Factories are slow, expensive, and unforgiving. Bloomberg's note that the reported round excludes additional debt is a hint at how much money this model consumes. Utilization — the number the whole return argument rests on — falls as fast as it climbs if contracts slip or a program is restructured. Hadrian has committed to putting up around $1.5 billion of private capital against the Navy partnership. That is a large forward obligation for a company at this stage.
-
-Then the concentration and the politics. Hadrian's fortunes are tied to US defense procurement, which turns with administrations and appropriations. Its cap table includes 1789 Capital, backed by Donald Trump Jr., alongside Founders Fund and a16z's American Dynamism practice — a network that has been an obvious asset in the current environment and would be an obvious liability in a different one. The company also competes with hundreds of incumbent machine shops on price and with better-funded neighbors on ambition, and it must meet defense qualification standards that punish novelty.
+This is a concentrated, illiquid position sized for the portion of a portfolio that can go to zero — true of every pre-IPO position, Hadrian included.
