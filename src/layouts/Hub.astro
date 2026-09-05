@@ -1,5 +1,6 @@
 ---
 import Analytics from '../components/Analytics.astro';
+import Header from '../components/Header.astro';
 import Disclosure from '../components/Disclosure.astro';
 interface Props {
   title: string;
@@ -35,12 +36,7 @@ const companyName = title.split('—')[0].trim();
     <Analytics />
   </head>
   <body>
-    <header class="header">
-      <a class="brand" href="/">Gracia Group</a>
-      <nav class="nav">
-        <a class="company-btn" href="/">All Articles</a>
-      </nav>
-    </header>
+    <Header tradesUrl={topTradesUrl} />
 
     <main class="page">
       <div class="company-head">
@@ -70,9 +66,6 @@ const companyName = title.split('—')[0].trim();
 </html>
 
 <style>
-  .header { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
-  .brand { font-family: var(--font-display); font-weight: 600; font-size: 1.15rem; color: var(--ink); border-bottom: none; }
-  .nav { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
   .page { padding: 40px; }
   .company-head { display: flex; align-items: center; gap: 16px; }
   .company-logo { height: 48px; width: auto; object-fit: contain; }
