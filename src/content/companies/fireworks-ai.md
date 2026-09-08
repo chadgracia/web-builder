@@ -4,6 +4,7 @@ seoTitle: "How to Invest in Fireworks AI: Stock, Series D & Pre-IPO Shares (2026
 heading: "Fireworks AI, Before the IPO"
 description: "Fireworks AI stock isn't publicly traded. Here's how accredited investors access Fireworks AI shares through secondaries and SPVs — the $17.5B Series D, the $1B revenue run rate, and what a realistic deal looks like."
 sector: "AI Infrastructure / Inference"
+logo: "https://bannerlogos.s3.us-east-1.amazonaws.com/Fireworks%20AI.png"
 ctaText: "See Fireworks AI Offers Now →"
 topSrc: "fireworks-ai-top"
 bottomSrc: "fireworks-ai-button"
