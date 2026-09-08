@@ -4,6 +4,7 @@ seoTitle: "How to Invest in Tenstorrent: Series E, Stock & Pre-IPO Shares (2026)
 heading: "Tenstorrent, Before the IPO"
 description: "Tenstorrent stock isn't publicly traded. Here's how accredited investors access Tenstorrent shares through secondaries and SPVs — Series E context, the reported Qualcomm talks, and what a realistic deal looks like."
 sector: "AI Infrastructure / Semiconductors"
+logo: "https://bannerlogos.s3.us-east-1.amazonaws.com/Tenstorrent.png"
 ctaText: "See Tenstorrent Offers Now →"
 topSrc: "tenstorrent-top"
 bottomSrc: "tenstorrent-button"

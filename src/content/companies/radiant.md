@@ -4,6 +4,7 @@ seoTitle: "How to Invest in Radiant Nuclear: Stock, Series D & Pre-IPO Shares (2
 heading: "Radiant, Before the IPO"
 description: "Radiant stock isn't publicly traded. Here's how accredited investors access shares of the nuclear microreactor maker through secondaries and SPVs — the $1.8B+ Series D, the Kaleidos milestones, and what a realistic deal looks like."
 sector: "Nuclear / Microreactors"
+logo: "https://bannerlogos.s3.us-east-1.amazonaws.com/Radiant.png"
 ctaText: "See Radiant Offers Now →"
 topSrc: "radiant-top"
 bottomSrc: "radiant-button"
