@@ -12,7 +12,7 @@ So this week I'm highlighting five direct opportunities — actual shares, no fu
 
 ### Hadrian
 
-I'm writing this from Kyiv, where the case for rebuilding Western defense manufacturing capacity isn't theoretical, it's visible out my window. [Hadrian](/hadrian/) builds highly automated "factories as a service" producing precision components for aerospace and defense customers, including a partnership with Anduril. The company raised in January at a $1.6 billion valuation in a round led by T. Rowe Price, with Founders Fund, Lux, a16z, and Altimeter participating, and press reports in June pointed to talks for a much larger round — which the company disputed. Of all the reindustrialization plays, this is the one I'm following most closely.
+I'm writing this from Kyiv, where the case for rebuilding Western defense manufacturing capacity isn't theoretical, it's visible out my window. [Hadrian](/hadrian/) builds highly automated "factories as a service" producing precision components for aerospace and defense customers. The company raised in January at a $1.6 billion valuation in a round led by T. Rowe Price, with Founders Fund, Lux, a16z, and Altimeter participating, and press reports in June pointed to talks for a much larger round — which the company disputed. Of all the reindustrialization plays, this is the one I'm following most closely.
 
 [View the Hadrian deal &rarr;](https://trades.graciagroup.com/deal/55297725)
 

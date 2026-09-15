@@ -25,7 +25,7 @@ Unlike some peers, there is no meaningful public-proxy route — Hadrian's cap t
 
 ## The Series D and where the valuation stands
 
-The markup deserves scrutiny in both directions. Five-x in thirteen months, against a Series C of $260 million a year earlier, reflects genuine expansion — the factory footprint grew to four sites, Navy submarine work landed, and defense-industrial capital is flooding the category (Anduril at a reported $60+ billion, Shield AI at $12.7 billion, Saronic at $9.25 billion). But it also means much of the value exists at a fresh private mark, without disclosed revenue that independently anchors it. If the next round prices flat, secondary buyers at Series D levels wear that.
+The markup deserves scrutiny in both directions. Five-x in thirteen months, against a Series C of $260 million a year earlier, reflects genuine expansion — the factory footprint grew to four sites, Navy submarine work landed, and defense-industrial capital is flooding the category (Shield AI at a reported $12.7 billion, Saronic at $9.25 billion). But it also means much of the value exists at a fresh private mark, without disclosed revenue that independently anchors it. If the next round prices flat, secondary buyers at Series D levels wear that.
 
 The structural bet is straightforward: U.S. defense production demand exceeds trusted domestic manufacturing capacity, the government is spending to close that gap, and Hadrian sells the capacity itself rather than competing on any single weapons program. That's a different — arguably more durable — position than a program-dependent prime or startup.
 

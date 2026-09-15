@@ -7,7 +7,7 @@ blurb: "Five secondary SPV allocations in AI infrastructure: inference, data, cu
 
 *Research note · July 2026*
 
-Over the past three years, many of you joined us in securing early positions in Anthropic. What started as an ambitious bet on frontier AI safety has transformed into one of the most remarkable growth trajectories in modern tech, validating the power of acquiring foundational infrastructure early.
+Over the past three years, many of you joined us in securing early positions in frontier AI. Those early bets have delivered some of the most remarkable growth trajectories in modern tech, validating the power of acquiring foundational infrastructure early.
 
 As frontier LLMs mature, the next wave of value creation is shifting toward core enabling infrastructure: lower compute costs, real-time inference, high-quality expert training data, and physical robotics. We currently have access to allocations in secondary SPVs for five category-defining companies addressing these critical bottlenecks.
 
@@ -33,7 +33,7 @@ As frontier LLMs mature, the next wave of value creation is shifting toward core
 
 **Key Investors:** Felicis Ventures, Benchmark, General Catalyst, and Menlo Ventures.
 
-**Investment Thesis:** As AI models exhaust synthetic data, Mercor provides specialized human expert pipelines required to train, evaluate, and benchmark frontier models. Supporting data workflows for leading AI labs including OpenAI, Anthropic, and Meta, Mercor is positioning itself as an essential player in high-end AI data infrastructure.
+**Investment Thesis:** As AI models exhaust synthetic data, Mercor provides specialized human expert pipelines required to train, evaluate, and benchmark frontier models. Supporting data workflows for leading AI labs including OpenAI and Meta, Mercor is positioning itself as an essential player in high-end AI data infrastructure.
 
 **Funding Round:** [aiweekly.co](https://aiweekly.co/alerts/mercor-in-talks-for-20b-round-double-october-valuation)
 
