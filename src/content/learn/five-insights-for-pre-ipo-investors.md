@@ -2,6 +2,7 @@
 title: "SpaceX: Five Insights for Pre-IPO Investors"
 description: "Five hard-won lessons drawn from over 100 SpaceX secondary transactions — on SPV layers, carried interest, bidding discipline on hot names, and why the private secondary market can beat waiting for the IPO."
 date: "March 2026"
+audience: buyers
 ---
 
 After many years offering SpaceX shares to my clients, today I congratulated those who invested early and then decided to analyze more than 100 transactions where the buyers decided *not* to invest. Of course, such retroactive analysis should be taken with a grain of salt (the insights would be useless if SpaceX didn't have a successful IPO), but I still thought there would be some grains of insight.

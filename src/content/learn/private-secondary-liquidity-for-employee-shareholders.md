@@ -2,6 +2,7 @@
 title: "Private Secondary Liquidity Solutions for Employee Shareholders"
 description: "How current and former employees can quietly and legally unlock value from vested private-company equity — with seller control, non-exclusive terms, performance-based fees, and hands-on execution."
 date: "June 2026"
+audience: sellers
 ---
 
 Navigating the private secondary market as a current or former employee can feel overwhelming. Balancing corporate insider policies, strict transfer restrictions, and your relationship with your employer requires absolute discretion and specialized broker guidance.

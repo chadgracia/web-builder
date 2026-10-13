@@ -2,6 +2,7 @@
 title: "How an Anthropic Trade Actually Gets Done"
 description: "A behind-the-scenes, composite walkthrough of how a single Anthropic secondary trade comes together — from the search for shares to the close."
 date: "February 2026"
+audience: buyers
 ---
 
 Given the level of interest in Anthropic, I thought I'd share a behind-the-scenes look at how a representative trade unfolds. This is a composite from several recent trades, but should give some insight into the mechanics of these transactions. I hope you find it useful!

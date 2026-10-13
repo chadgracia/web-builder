@@ -25,7 +25,10 @@ const companies = defineCollection({
 
 const learn = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/learn' }),
-  schema: guideSchema.extend({ date: z.string() }),
+  schema: guideSchema.extend({
+    date: z.string(),
+    audience: z.enum(['buyers', 'sellers', 'both']).optional(),
+  }),
 });
 
 const notes = defineCollection({

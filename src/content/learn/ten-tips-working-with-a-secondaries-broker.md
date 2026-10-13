@@ -2,6 +2,7 @@
 title: "Ten Tips for Working With a Pre-IPO Secondaries Broker"
 description: "A practical guide to building a productive relationship with a private-market broker — honesty, transparency, structure, compliance, and the etiquette that gets you shown the best trades."
 date: "March 2023"
+audience: sellers
 ---
 
 Building a solid relationship with a broker can be valuable when trying to navigate the illiquid, volatile, and complex private secondary market. Here are ten tips to help build a positive and productive relationship with your broker.
