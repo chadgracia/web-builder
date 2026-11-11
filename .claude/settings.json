@@ -1,3 +1,16 @@
 {
-  "model": "claude-opus-4-8"
+  "model": "claude-opus-4-8",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/.github/scripts/secret_guard.py\" --hook"
+          }
+        ]
+      }
+    ]
+  }
 }
