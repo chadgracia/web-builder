@@ -4,6 +4,9 @@ import sitemap from '@astrojs/sitemap';
 import rehypeExternalLinks from 'rehype-external-links';
 
 export default defineConfig({
+  redirects: {
+    '/learn/how-an-anthropic-trade-actually-gets-done': '/',
+  },
   site: 'https://pre-ipo.graciagroup.com',
   integrations: [
     sitemap({

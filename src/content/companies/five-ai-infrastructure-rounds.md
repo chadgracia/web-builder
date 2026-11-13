@@ -7,8 +7,6 @@ blurb: "Five secondary SPV allocations in AI infrastructure: inference, data, cu
 
 *Research note · July 2026*
 
-Over the past three years, many of you joined us in securing early positions in Anthropic. What started as an ambitious bet on frontier AI safety has transformed into one of the most remarkable growth trajectories in modern tech, validating the power of acquiring foundational infrastructure early.
-
 As frontier LLMs mature, the next wave of value creation is shifting toward core enabling infrastructure: lower compute costs, real-time inference, high-quality expert training data, and physical robotics. We currently have access to allocations in secondary SPVs for five category-defining companies addressing these critical bottlenecks.
 
 ## 1. Fireworks AI — Next-Gen Model Serving & Inference Cloud

@@ -14,7 +14,7 @@ As a US registered securities broker operating under Rainmaker Securities (a FIN
 For most employees, equity represents a significant portion of their net worth, but it is locked up in a highly illiquid "black box." We design our entire process to eliminate the primary friction points employee holders face:
 
 - **Absolute Seller Control:** You remain in complete control of the timeline and the narrative. You decide exactly when you want to look at market bids, when you want to speak with a prospective buyer, and whether or not to transact. There is never any obligation or pressure to move forward.
-- **Risk-Free, Non-Exclusive Terms:** Our engagements are non-exclusive. We believe we have to earn your business every day. If you find a better liquidity path elsewhere, you are free to take it.
+- **No-Obligation, Non-Exclusive Terms:** Our engagements are non-exclusive. We believe we have to earn your business every day. If you find a better liquidity path elsewhere, you are free to take it.
 - **Zero Upfront Costs & Performance-Based Billing:** We only bill a commission after your transaction is fully cleared and the wire transfer has landed safely in your bank account. Our commissions range from 2% to 5% depending entirely on the overall size of the transaction. If you don't get paid, we don't get paid.
 - **Protection of Corporate Relationships:** Navigating your company's internal legal, HR, and investor relations departments can be daunting. We serve as a professional buffer, guiding you through company transfer notices, corporate Right of First Refusal (ROFR) clocks, and internal approval processes without creating friction with your management team.
 
